@@ -2,7 +2,10 @@
 
 <head>
   <script src="buildingInfo.js"></script>
+  <script src="polyfills/dialog-polyfill.js"></script>
   <script src="libs/interact.min.js"></script>
+
+  <link rel="stylesheet" href="polyfills/dialog-polyfill.css" />
   <style>
     @font-face {
       font-family: "Armata-Regular";
@@ -76,7 +79,7 @@
       }
     }
 
-    #importDialog {
+    #importDialog, #helpDialog {
       width: 70%;
       top: 20px;
     }
@@ -151,6 +154,9 @@
         findParent(e.target, 'dialog').close();
       })
     });
+
+    dialogPolyfill.registerDialog(document.querySelector('#importDialog'));
+    dialogPolyfill.registerDialog(document.querySelector('#helpDialog'));
 
     document.querySelector('#importModal').addEventListener('click', (e) => {
       document.querySelector('#importDialog').showModal();
