@@ -1,0 +1,343 @@
+<html>
+
+<head>
+  <script src="buildingInfo.js"></script>
+  <script src="libs/interact.min.js"></script>
+  <style>
+    @font-face {
+      font-family: "Armata-Regular";
+      src: url("Armata-Regular.ttf") format("truetype");
+    }
+
+    .grid {
+      background: #e7eae3;
+    }
+
+    .mapTile {
+      box-sizing: border-box;
+      position: absolute;
+      background-color: #b2bba5;
+      border-bottom: solid #ccd2c3 1px;
+      border-right: solid #ccd2c3 1px;
+    }
+
+    .buildingNode {
+      box-sizing: border-box;
+      position: absolute;
+      border: solid #666 1px;
+      font-family: 'Armata-Regular';
+      font-size: 11px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .buildingNode SPAN {
+      position: relative;
+      top: calc(50% - 6px);
+    }
+
+    .toolbar {
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      padding: 10px;
+    }
+
+    BUTTON {
+      display: inline-block;
+      padding: 0.7em 1.4em;
+      margin: 0 0.3em 0.3em 0;
+      border-radius: 0.15em;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: 'Armata-Regular';
+      text-transform: uppercase;
+      font-weight: 400;
+      color: #FFFFFF;
+      background-color: #3369ff;
+      box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+      text-align: center;
+      position: relative;
+      border: none;
+    }
+
+    BUTTON:active {
+      top: 0.1em;
+    }
+
+    BUTTON:hover {
+      background-color: #4379ff;
+    }
+
+    @media all and (max-width:30em) {
+      BUTTON {
+        display: block;
+        margin: 0.4em auto;
+      }
+    }
+
+    #importDialog {
+      width: 70%;
+      top: 20px;
+    }
+
+    #importDialog TEXTAREA {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="toolbar">
+    <input id="building" list="buildings" autocomplete=off>
+
+    <datalist id="buildings">
+    </datalist>
+    <button id="addBuilding">Add</button>
+    <button id="importModal">Import</button>
+    <button id="save">Save</button>
+    <button id="helpModal">Help</button>
+  </div>
+  <div class="grid"></div>
+
+  <dialog id="importDialog">
+    <span>Map JSON ( JSON.stringify(CityMap.UnlockedAreas) see Help for how to use this)</span>
+    <textarea id="mapJSON"></textarea>
+    <span>City JSON ( JSON.stringify(MainParser.CityMapData) )</span>
+    <textarea id="cityJSON"></textarea>
+    <button id="import">Import</button>
+    <button data-action="close">Close</button>
+  </dialog>
+
+  <dialog id="helpDialog">
+    <p>
+      You need the <a href="https://foe-rechner.de/startpage">FoE Helper browser extension</a> installed, login to your city. Press F12, which will show the DevTools. In the Console tab paste the commands displayed on the Import dialog. Press Enter and it will output some data. Copy the data, if it is long, you might need to scroll all the way to the right and use the Copy button to get the whole amount.
+      <br/>
+      Watch this <a href="https://www.youtube.com/watch?v=OsEVcCzmCr8">short video</a> to see how those steps work.
+    </p>
+    <p>
+      You can move buildings with a click + drag. Ctrl + Click on a building to delete it. Select a building from the dropdown top right and click Add to add it.
+    </p>
+    <p>
+      Save will store the current city layout into your Browsers storage, when you load this page again it will load this by default. Click Save again it will overwrite any previous save.
+    </p>
+    <button data-action="close">Close</button>
+  </dialog>
+
+  <script>
+    // JSON.stringify(MainParser.CityMapData)
+    var cityData = JSON.parse(localStorage.getItem('saved-city-data')) || [];
+
+    // JSON.stringify(CityMap.UnlockedAreas)
+    var mapData = JSON.parse(localStorage.getItem('saved-map-data')) || [];
+
+    const buildingDropdown = document.querySelector('#buildings');
+    const buildingInput = document.querySelector('#building');
+    const buildingList = [];
+    const grid = document.querySelector('.grid');
+
+    document.querySelector('#addBuilding').addEventListener('click', (e) => {
+      grid.appendChild(createBuilding({
+        cityentity_id: buildingDropdown.querySelector(`OPTION[value="${buildingInput.value}"]`).getAttribute('data-building-id'),
+        x: 0,
+        y: 0
+      }));
+    });
+
+    document.querySelectorAll('[data-action="close"]').forEach((el) => {
+      el.addEventListener('click', (e) => {
+        findParent(e.target, 'dialog').close();
+      })
+    });
+
+    document.querySelector('#importModal').addEventListener('click', (e) => {
+      document.querySelector('#importDialog').showModal();
+    });
+
+    document.querySelector('#helpModal').addEventListener('click', (e) => {
+      document.querySelector('#helpDialog').showModal();
+    });
+
+    document.querySelector('#import').addEventListener('click', (e) => {
+      let mapStr = document.querySelector('#mapJSON').value.trim().replace(/^"|"$/g, '');
+      let cityStr = document.querySelector('#cityJSON').value.trim().replace(/^"|"$/g, '');
+      mapData = JSON.parse(mapStr);
+      cityData = JSON.parse(cityStr);
+      renderCity();
+    });
+
+    document.querySelector('#save').addEventListener('click', (e) => {
+      localStorage.setItem('saved-city-data', JSON.stringify(getMapLayout()));
+      localStorage.setItem('saved-map-data', JSON.stringify(mapData));
+    });
+
+    function getMapLayout() {
+      const data = [];
+      grid.querySelectorAll('.buildingNode').forEach((el) => {
+        let cityentity_id = el.getAttribute('data-cityentity-id');
+        let x = parseInt(el.style.left) / zoomAmount;
+        let y = parseInt(el.style.top) / zoomAmount;
+        data.push({ 
+          cityentity_id,
+          x,
+          y
+        });
+      });
+      return data;
+    }
+
+
+    Object.keys(buildingData).forEach((key) => {
+      if (!isPlayerBuilding(buildingData[key].type)) return;
+      buildingList.push({
+        name: buildingData[key].name,
+        value: key
+      });
+    });
+
+    buildingList.sort((a, b) => {
+      return a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1;
+    });
+
+    buildingList.forEach((building) => {
+      const el = document.createElement('OPTION');
+      //el.appendChild(document.createTextNode(building.name));
+      el.value = building.name;
+      el.setAttribute('data-building-id', building.value);
+      buildingDropdown.appendChild(el);
+    });
+
+    function isPlayerBuilding(type) {
+      switch (type.toLowerCase()) {
+        case 'street':
+        case 'outpost_ship':
+        case 'friends_tavern':
+        case 'off_grid':
+        case 'hub_main':
+        case 'hub_part':
+          //case 'main_building':
+        case 'impediment':
+          return false;
+      }
+      return true;
+    }
+
+    const zoomAmount = 25;
+    let maxWidth = 0;
+    let maxHeight = 0;
+
+    function abbrBuildingName(name, minSize) {
+      const abbr = name.replace(/[^A-Z]/g, '').split('-')[0];
+      return minSize < 2 ? abbr[0] : abbr;
+    }
+
+    function findParent(el, tag) {
+      return el.nodeName.toLowerCase() === tag ? el : findParent(el.parentNode, tag);
+    }
+
+    function createMapTile(data) {
+      const el = document.createElement('DIV');
+      el.className = 'mapTile';
+      let height = data.length * zoomAmount;
+      let width = data.width * zoomAmount;
+      el.style.height = height + 'px';
+      el.style.width = width + 'px';
+
+      el.style.top = data.y * zoomAmount + 'px';
+      el.style.left = data.x * zoomAmount + 'px';
+
+      if (maxWidth < (width + data.x * zoomAmount)) maxWidth = (width + data.x * zoomAmount);
+      if (maxHeight < (height + data.y * zoomAmount)) maxHeight = (height + data.y * zoomAmount);
+      return el;
+    }
+
+    function createBuilding(data) {
+      const el = document.createElement('DIV');
+
+      el.className = 'buildingNode';
+      el.setAttribute('data-cityentity-id', data.cityentity_id);
+
+      el.addEventListener('click', (e) => {
+        if (e.ctrlKey) findParent(e.target, 'div').remove();
+      });
+
+      el.style.height = (buildingData[data.cityentity_id].height * zoomAmount) + 'px';
+      el.style.width = (buildingData[data.cityentity_id].width * zoomAmount) + 'px';
+
+      el.style.top = data.y * zoomAmount + 'px';
+      el.style.left = data.x * zoomAmount + 'px';
+
+      el.innerHTML =
+        `<span><abbr title="${buildingData[data.cityentity_id].name}">${abbrBuildingName(buildingData[data.cityentity_id].name, Math.min(buildingData[data.cityentity_id].height, buildingData[data.cityentity_id].width))}</abbr></span>`;
+      return el;
+    }
+
+    function renderCity() {
+      mapData.forEach(tile => {
+        for (let a = 0; a < tile.length; a++) {
+          for (let b = 0; b < tile.width; b++) {
+            grid.appendChild(createMapTile({
+              width: 1,
+              length: 1,
+              x: tile.x + a,
+              y: tile.y + b
+            }));
+          }
+        }
+      });
+
+      cityData.forEach(building => {
+        if (!isPlayerBuilding(buildingData[building.cityentity_id].type)) return;
+        grid.appendChild(createBuilding(building));
+      });
+
+      let gridEl = document.querySelector('.grid');
+      gridEl.style.width = maxWidth + 200 + 'px'; // 200 is a map gutter to allow dropping buildings
+      gridEl.style.height = maxHeight + 'px';
+
+      interact('.buildingNode')
+        .draggable({
+          modifiers: [
+            interact.modifiers.snap({
+              targets: [
+                interact.createSnapGrid({
+                  x: 25,
+                  y: 25
+                })
+              ],
+              range: 30,
+              relativePoints: [{
+                x: 0,
+                y: 0
+              }]
+            }),
+            interact.modifiers.restrict({
+              restriction: gridEl,
+              elementRect: {
+                top: 0,
+                left: 0,
+                bottom: 1,
+                right: 1
+              },
+              endOnly: true
+            })
+          ]
+        })
+        .on('dragmove', function (event) {
+          let x = parseInt(event.target.style.left);
+          let y = parseInt(event.target.style.top);
+
+          x += event.dx
+          y += event.dy
+
+          event.target.style.top = y + 'px';
+          event.target.style.left = x + 'px';
+        });
+    }
+    renderCity();
+  </script>
+</body>
+
+</html>
