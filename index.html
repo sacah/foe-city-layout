@@ -237,6 +237,8 @@
     const zoomAmount = 25;
     let maxWidth = 0;
     let maxHeight = 0;
+    const xMove = 100; // Really big cities push right up against the side, this number is just a quick push away from edges
+    const yMove = 100;
 
     function abbrBuildingName(name, minSize) {
       const abbr = name.replace(/[^A-Z]/g, '').split('-')[0];
@@ -255,8 +257,8 @@
       el.style.height = height + 'px';
       el.style.width = width + 'px';
 
-      el.style.top = data.y * zoomAmount + 'px';
-      el.style.left = data.x * zoomAmount + 'px';
+      el.style.top = data.y * zoomAmount + yMove + 'px';
+      el.style.left = data.x * zoomAmount + xMove + 'px';
 
       if (maxWidth < (width + data.x * zoomAmount)) maxWidth = (width + data.x * zoomAmount);
       if (maxHeight < (height + data.y * zoomAmount)) maxHeight = (height + data.y * zoomAmount);
@@ -276,8 +278,8 @@
       el.style.height = (buildingData[data.cityentity_id].height * zoomAmount) + 'px';
       el.style.width = (buildingData[data.cityentity_id].width * zoomAmount) + 'px';
 
-      el.style.top = data.y * zoomAmount + 'px';
-      el.style.left = data.x * zoomAmount + 'px';
+      el.style.top = data.y * zoomAmount + yMove + 'px';
+      el.style.left = data.x * zoomAmount + xMove + 'px';
 
       el.innerHTML =
         `<span><abbr title="${buildingData[data.cityentity_id].name}">${abbrBuildingName(buildingData[data.cityentity_id].name, Math.min(buildingData[data.cityentity_id].height, buildingData[data.cityentity_id].width))}</abbr></span>`;
@@ -298,6 +300,8 @@
       mapData.forEach(tile => {
         for (let a = 0; a < tile.length; a++) {
           for (let b = 0; b < tile.width; b++) {
+            tile.x = tile.x || 0; // Either FoE or FoE Helper put NULL if x or y is 0
+            tile.y = tile.y || 0;
             grid.appendChild(createMapTile({
               width: 1,
               length: 1,
@@ -314,8 +318,8 @@
       });
 
       let gridEl = document.querySelector('.grid');
-      gridEl.style.width = maxWidth + 200 + 'px'; // 200 is a map gutter to allow dropping buildings
-      gridEl.style.height = maxHeight + 'px';
+      gridEl.style.width = maxWidth + xMove + 200 + 'px'; // 200 is a map gutter to allow dropping buildings
+      gridEl.style.height = maxHeight + yMove + 200 +  'px';
 
       interact('.buildingNode').unset()
       interact('.buildingNode')
