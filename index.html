@@ -275,6 +275,9 @@
         if (e.ctrlKey) findParent(e.target, 'div').remove();
       });
 
+      data.x = data.x || 0; // Either FoE or FoE Helper put NULL if x or y is 0
+      data.y = data.y || 0;
+
       el.style.height = (buildingData[data.cityentity_id].height * zoomAmount) + 'px';
       el.style.width = (buildingData[data.cityentity_id].width * zoomAmount) + 'px';
 
