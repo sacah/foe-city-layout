@@ -129,6 +129,9 @@
     <p>
       Save will store the current city layout into your Browsers storage, when you load this page again it will load this by default. Click Save again it will overwrite any previous save.
     </p>
+    <p>
+      Found a problem, log it at <a href="https://github.com/sacah/foe-city-layout/issues">GitHub Issues</a>
+    </p>
     <button data-action="close">Close</button>
   </dialog>
 
@@ -187,8 +190,8 @@
       const data = [];
       grid.querySelectorAll('.buildingNode').forEach((el) => {
         let cityentity_id = el.getAttribute('data-cityentity-id');
-        let x = parseInt(el.style.left) / zoomAmount;
-        let y = parseInt(el.style.top) / zoomAmount;
+        let x = (parseInt(el.style.left) - xMove) / zoomAmount;
+        let y = (parseInt(el.style.top) - yMove) / zoomAmount;
         data.push({ 
           cityentity_id,
           x,
@@ -366,6 +369,17 @@
     }
     renderCity();
   </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164513002-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-164513002-1');
+  </script>
+
 </body>
 
 </html>
