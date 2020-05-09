@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Armata-Regular";
-  src: url("/src/style/Armata-Regular.ttf") format("truetype");
+  src: url("src/style/Armata-Regular.ttf") format("truetype");
 }
 
 .grid {
