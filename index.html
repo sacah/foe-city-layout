@@ -1,106 +1,24 @@
 <html>
 
 <head>
-  <script src="buildingInfo.js"></script>
-  <script src="polyfills/dialog-polyfill.js"></script>
-  <script src="libs/interact.min.js"></script>
+  <script src="src/data/buildingInfo.js"></script>
+  <script src="libs/dialog-polyfill/dialog-polyfill.js"></script>
+  <script src="libs/interact/interact.min.js"></script>
 
-  <link rel="stylesheet" href="polyfills/dialog-polyfill.css" />
-  <style>
-    @font-face {
-      font-family: "Armata-Regular";
-      src: url("Armata-Regular.ttf") format("truetype");
-    }
-
-    .grid {
-      background: #e7eae3;
-    }
-
-    .mapTile {
-      box-sizing: border-box;
-      position: absolute;
-      background-color: #b2bba5;
-      border-bottom: solid #ccd2c3 1px;
-      border-right: solid #ccd2c3 1px;
-    }
-
-    .buildingNode {
-      box-sizing: border-box;
-      position: absolute;
-      border: solid #666 1px;
-      font-family: 'Armata-Regular';
-      font-size: 11px;
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.5);
-    }
-
-    .buildingNode SPAN {
-      position: relative;
-      top: calc(50% - 6px);
-    }
-
-    .toolbar {
-      position: fixed;
-      top: 0px;
-      right: 0px;
-      padding: 10px;
-    }
-
-    BUTTON {
-      display: inline-block;
-      padding: 0.7em 1.4em;
-      margin: 0 0.3em 0.3em 0;
-      border-radius: 0.15em;
-      box-sizing: border-box;
-      text-decoration: none;
-      font-family: 'Armata-Regular';
-      text-transform: uppercase;
-      font-weight: 400;
-      color: #FFFFFF;
-      background-color: #3369ff;
-      box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
-      text-align: center;
-      position: relative;
-      border: none;
-    }
-
-    BUTTON:active {
-      top: 0.1em;
-    }
-
-    BUTTON:hover {
-      background-color: #4379ff;
-    }
-
-    @media all and (max-width:30em) {
-      BUTTON {
-        display: block;
-        margin: 0.4em auto;
-      }
-    }
-
-    #importDialog, #helpDialog {
-      width: 70%;
-      top: 20px;
-    }
-
-    #importDialog TEXTAREA {
-      width: 100%;
-      height: 200px;
-      margin-bottom: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="libs/dialog-polyfill/dialog-polyfill.css" />
+  <link rel="stylesheet" href="src/style/style.css" />
 </head>
 
 <body>
   <div class="toolbar">
-    <input id="building" list="buildings" autocomplete=off>
+    <input id="building" list="buildings" autocomplete="off">
 
     <datalist id="buildings">
     </datalist>
     <button id="addBuilding">Add</button>
     <button id="importModal">Import</button>
     <button id="save">Save</button>
+    <button id="share">Share</button>
     <button id="helpModal">Help</button>
   </div>
   <div class="grid"></div>
@@ -111,6 +29,11 @@
     <span>City JSON ( JSON.stringify(MainParser.CityMapData) )</span>
     <textarea id="cityJSON"></textarea>
     <button id="import">Import</button>
+    <button data-action="close">Close</button>
+  </dialog>
+
+  <dialog id="shareDialog">
+    <input id="shareLink" />
     <button data-action="close">Close</button>
   </dialog>
 
@@ -135,240 +58,10 @@
     <button data-action="close">Close</button>
   </dialog>
 
+  <script src="/src/js/main.js"></script>
   <script>
-    // JSON.stringify(MainParser.CityMapData)
-    var cityData = JSON.parse(localStorage.getItem('saved-city-data')) || [];
-
-    // JSON.stringify(CityMap.UnlockedAreas)
-    var mapData = JSON.parse(localStorage.getItem('saved-map-data')) || [];
-
-    const buildingDropdown = document.querySelector('#buildings');
-    const buildingInput = document.querySelector('#building');
-    const buildingList = [];
-    const grid = document.querySelector('.grid');
-
-    document.querySelector('#addBuilding').addEventListener('click', (e) => {
-      grid.appendChild(createBuilding({
-        cityentity_id: buildingDropdown.querySelector(`OPTION[value="${buildingInput.value}"]`).getAttribute('data-building-id'),
-        x: 0,
-        y: 0
-      }));
-    });
-
-    document.querySelectorAll('[data-action="close"]').forEach((el) => {
-      el.addEventListener('click', (e) => {
-        findParent(e.target, 'dialog').close();
-      })
-    });
-
-    dialogPolyfill.registerDialog(document.querySelector('#importDialog'));
-    dialogPolyfill.registerDialog(document.querySelector('#helpDialog'));
-
-    document.querySelector('#importModal').addEventListener('click', (e) => {
-      document.querySelector('#importDialog').showModal();
-    });
-
-    document.querySelector('#helpModal').addEventListener('click', (e) => {
-      document.querySelector('#helpDialog').showModal();
-    });
-
-    document.querySelector('#import').addEventListener('click', (e) => {
-      let mapStr = document.querySelector('#mapJSON').value.trim().replace(/^"|"$/g, '');
-      let cityStr = document.querySelector('#cityJSON').value.trim().replace(/^"|"$/g, '');
-      mapData = JSON.parse(mapStr);
-      cityData = JSON.parse(cityStr);
-      
-      renderCity();
-    });
-
-    document.querySelector('#save').addEventListener('click', (e) => {
-      localStorage.setItem('saved-city-data', JSON.stringify(getMapLayout()));
-      localStorage.setItem('saved-map-data', JSON.stringify(mapData));
-    });
-
-    function getMapLayout() {
-      const data = [];
-      grid.querySelectorAll('.buildingNode').forEach((el) => {
-        let cityentity_id = el.getAttribute('data-cityentity-id');
-        let x = (parseInt(el.style.left) - xMove) / zoomAmount;
-        let y = (parseInt(el.style.top) - yMove) / zoomAmount;
-        data.push({ 
-          cityentity_id,
-          x,
-          y
-        });
-      });
-      return data;
-    }
-
-
-    Object.keys(buildingData).forEach((key) => {
-      if (!isPlayerBuilding(buildingData[key].type)) return;
-      buildingList.push({
-        name: buildingData[key].name,
-        value: key
-      });
-    });
-
-    buildingList.sort((a, b) => {
-      return a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1;
-    });
-
-    buildingList.forEach((building) => {
-      const el = document.createElement('OPTION');
-      //el.appendChild(document.createTextNode(building.name));
-      el.value = building.name;
-      el.setAttribute('data-building-id', building.value);
-      buildingDropdown.appendChild(el);
-    });
-
-    function isPlayerBuilding(type) {
-      switch (type.toLowerCase()) {
-        case 'street':
-        case 'outpost_ship':
-        case 'friends_tavern':
-        case 'off_grid':
-        case 'hub_main':
-        case 'hub_part':
-          //case 'main_building':
-        case 'impediment':
-          return false;
-      }
-      return true;
-    }
-
-    const zoomAmount = 25;
-    let maxWidth = 0;
-    let maxHeight = 0;
-    const xMove = 100; // Really big cities push right up against the side, this number is just a quick push away from edges
-    const yMove = 100;
-
-    function abbrBuildingName(name, minSize) {
-      const abbr = name.replace(/[^A-Z]/g, '').split('-')[0];
-      return minSize < 2 ? abbr[0] : abbr;
-    }
-
-    function findParent(el, tag) {
-      return el.nodeName.toLowerCase() === tag ? el : findParent(el.parentNode, tag);
-    }
-
-    function createMapTile(data) {
-      const el = document.createElement('DIV');
-      el.className = 'mapTile';
-      let height = data.length * zoomAmount;
-      let width = data.width * zoomAmount;
-      el.style.height = height + 'px';
-      el.style.width = width + 'px';
-
-      el.style.top = data.y * zoomAmount + yMove + 'px';
-      el.style.left = data.x * zoomAmount + xMove + 'px';
-
-      if (maxWidth < (width + data.x * zoomAmount)) maxWidth = (width + data.x * zoomAmount);
-      if (maxHeight < (height + data.y * zoomAmount)) maxHeight = (height + data.y * zoomAmount);
-      return el;
-    }
-
-    function createBuilding(data) {
-      const el = document.createElement('DIV');
-
-      el.className = 'buildingNode';
-      el.setAttribute('data-cityentity-id', data.cityentity_id);
-
-      el.addEventListener('click', (e) => {
-        if (e.ctrlKey) findParent(e.target, 'div').remove();
-      });
-
-      data.x = data.x || 0; // Either FoE or FoE Helper put NULL if x or y is 0
-      data.y = data.y || 0;
-
-      el.style.height = (buildingData[data.cityentity_id].height * zoomAmount) + 'px';
-      el.style.width = (buildingData[data.cityentity_id].width * zoomAmount) + 'px';
-
-      el.style.top = data.y * zoomAmount + yMove + 'px';
-      el.style.left = data.x * zoomAmount + xMove + 'px';
-
-      el.innerHTML =
-        `<span><abbr title="${buildingData[data.cityentity_id].name}">${abbrBuildingName(buildingData[data.cityentity_id].name, Math.min(buildingData[data.cityentity_id].height, buildingData[data.cityentity_id].width))}</abbr></span>`;
-      return el;
-    }
-
-    function clearCity() {
-      grid.querySelectorAll('.buildingNode').forEach((el) => el.remove());
-    }
-
-    function clearMap() {
-      grid.querySelectorAll('.mapTile').forEach((el) => el.remove());
-    }
-
-    function renderCity() {
-      clearCity();
-      clearMap();
-      mapData.forEach(tile => {
-        for (let a = 0; a < tile.length; a++) {
-          for (let b = 0; b < tile.width; b++) {
-            tile.x = tile.x || 0; // Either FoE or FoE Helper put NULL if x or y is 0
-            tile.y = tile.y || 0;
-            grid.appendChild(createMapTile({
-              width: 1,
-              length: 1,
-              x: tile.x + a,
-              y: tile.y + b
-            }));
-          }
-        }
-      });
-
-      cityData.forEach(building => {
-        if (!isPlayerBuilding(buildingData[building.cityentity_id].type)) return;
-        grid.appendChild(createBuilding(building));
-      });
-
-      let gridEl = document.querySelector('.grid');
-      gridEl.style.width = maxWidth + xMove + 200 + 'px'; // 200 is a map gutter to allow dropping buildings
-      gridEl.style.height = maxHeight + yMove + 200 +  'px';
-
-      interact('.buildingNode').unset()
-      interact('.buildingNode')
-        .draggable({
-          modifiers: [
-            interact.modifiers.snap({
-              targets: [
-                interact.createSnapGrid({
-                  x: 25,
-                  y: 25
-                })
-              ],
-              range: 30,
-              relativePoints: [{
-                x: 0,
-                y: 0
-              }]
-            }),
-            interact.modifiers.restrict({
-              restriction: gridEl,
-              elementRect: {
-                top: 0,
-                left: 0,
-                bottom: 1,
-                right: 1
-              },
-              endOnly: true
-            })
-          ]
-        })
-        .on('dragmove', function (event) {
-          let x = parseInt(event.target.style.left);
-          let y = parseInt(event.target.style.top);
-
-          x += event.dx
-          y += event.dy
-
-          event.target.style.top = y + 'px';
-          event.target.style.left = x + 'px';
-        });
-    }
-    renderCity();
-  </script>
+    if (window.location.search) loadShared();
+    else renderCity();</script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164513002-1"></script>

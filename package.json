@@ -1,0 +1,27 @@
+{
+  "name": "foe-city-layout",
+  "version": "1.0.0",
+  "description": "View the site [City layout tool](https://sacah.github.io/foe-city-layout/)",
+  "main": "buildingInfo.js",
+  "dependencies": {
+    "static-server": "^2.2.1"
+  },
+  "devDependencies": {
+    "jsdom": "^16.2.2",
+    "mocha": "^7.1.2",
+    "sinon": "^9.0.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sacah/foe-city-layout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sacah/foe-city-layout/issues"
+  },
+  "homepage": "https://github.com/sacah/foe-city-layout#readme"
+}
