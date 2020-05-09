@@ -96,8 +96,8 @@ function generateShareLink() {
     let id = buildingData[building.cityentity_id].id;
     tmpBuilding[id] = tmpBuilding[id] || [];
 
-    tmpBuilding[id].push(building.x);
-    tmpBuilding[id].push(building.y);
+    tmpBuilding[id].push(building.x * 1);
+    tmpBuilding[id].push(building.y * 1);
   });
 
   Object.keys(tmpBuilding).forEach((id) => {
