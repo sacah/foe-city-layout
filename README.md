@@ -3,6 +3,9 @@
 View the site [City layout tool](https://sacah.github.io/foe-city-layout/)
 
 # Change log
+## 11/05/2020
+* Pull cityData from current building layout, rather than imported cityData
+
 ## 09/05/2020
 * Added a Share button, which generates a link that others can use to load your layout
 

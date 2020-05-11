@@ -92,7 +92,7 @@ function generateShareLink() {
   link += '|';
 
   const tmpBuilding = {};
-  cityData.forEach((building) => {
+  getMapLayout().forEach((building) => {
     let id = buildingData[building.cityentity_id].id;
     tmpBuilding[id] = tmpBuilding[id] || [];
 
