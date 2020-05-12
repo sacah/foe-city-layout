@@ -3,6 +3,9 @@
 View the site [City layout tool](https://sacah.github.io/foe-city-layout/)
 
 # Change log
+## 13/05/2020
+* Importing latest building data
+
 ## 11/05/2020
 * Pull cityData from current building layout, rather than imported cityData
 
