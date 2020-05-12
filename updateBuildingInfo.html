@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <script src="src/data/buildingInfo.js"></script>
+  <script src="src/data/buildingInfoFull.js"></script>
+</head>
+
+<body>
+  <script>
+    // Generate from Full a = {}; Object.keys(buildingData).forEach((building) => { let b = buildingData[building]; a[building] = { name: b.name, width: b.width, height: b.height, type: b.type } })
+    const newBuildings = {};
+    Object.keys(buildingDataFull).forEach((building) => {
+      if (!buildingData[building]) {
+        const b = buildingDataFull[building];
+        newBuildings[building] = { 
+          name: b.name, 
+          width: b.width, 
+          height: b.height, 
+          type: b.type 
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

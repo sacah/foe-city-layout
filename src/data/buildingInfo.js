@@ -7614,5 +7614,369 @@ var buildingData = {
     "height": 3,
     "type": "clan_power_production",
     "id": 1087
+  },
+  "A_MultiAge_ArcheologyBonus20": {
+    "name": "Globe Fountain",
+    "width": 3,
+    "height": 3,
+    "type": "culture",
+    "id": 1088
+  },
+  "A_SpaceAgeAsteroidBelt_Culture1": {
+    "name": "Belt Mining H.Q.",
+    "width": 5,
+    "height": 5,
+    "type": "culture",
+    "id": 1089
+  },
+  "A_SpaceAgeAsteroidBelt_Culture2": {
+    "name": "Asteroid Stock Exchange",
+    "width": 3,
+    "height": 5,
+    "type": "culture",
+    "id": 1090
+  },
+  "D_SpaceAgeAsteroidBelt_Decoration1": {
+    "name": "Asteroid Ad",
+    "width": 2,
+    "height": 2,
+    "type": "decoration",
+    "id": 1091
+  },
+  "G_SpaceAgeAsteroidBelt_Goods1": {
+    "name": "Bromine Pump",
+    "width": 5,
+    "height": 4,
+    "type": "goods",
+    "id": 1092
+  },
+  "G_SpaceAgeAsteroidBelt_Goods10": {
+    "name": "Fusion Reactors Synthesizer",
+    "width": 3,
+    "height": 3,
+    "type": "goods",
+    "id": 1093
+  },
+  "G_SpaceAgeAsteroidBelt_Goods2": {
+    "name": "Asteroid Drill",
+    "width": 4,
+    "height": 5,
+    "type": "goods",
+    "id": 1094
+  },
+  "G_SpaceAgeAsteroidBelt_Goods3": {
+    "name": "Nickel Excavator",
+    "width": 4,
+    "height": 6,
+    "type": "goods",
+    "id": 1095
+  },
+  "G_SpaceAgeAsteroidBelt_Goods4": {
+    "name": "Platinum Quarry",
+    "width": 5,
+    "height": 5,
+    "type": "goods",
+    "id": 1096
+  },
+  "G_SpaceAgeAsteroidBelt_Goods5": {
+    "name": "Bedrock Processor",
+    "width": 5,
+    "height": 4,
+    "type": "goods",
+    "id": 1097
+  },
+  "G_SpaceAgeAsteroidBelt_Goods6": {
+    "name": "Bio Tech Crops Synthesizer",
+    "width": 3,
+    "height": 3,
+    "type": "goods",
+    "id": 1098
+  },
+  "G_SpaceAgeAsteroidBelt_Goods7": {
+    "name": "Mars Microbes Synthesizer",
+    "width": 3,
+    "height": 3,
+    "type": "goods",
+    "id": 1099
+  },
+  "G_SpaceAgeAsteroidBelt_Goods8": {
+    "name": "Superalloys Synthesizer",
+    "width": 3,
+    "height": 3,
+    "type": "goods",
+    "id": 1100
+  },
+  "G_SpaceAgeAsteroidBelt_Goods9": {
+    "name": "Lubricants Synthesizer",
+    "width": 3,
+    "height": 3,
+    "type": "goods",
+    "id": 1101
+  },
+  "G_SpaceAgeAsteroidBelt_SpecialGoods1": {
+    "name": "Mars Ore Synthesizer",
+    "width": 3,
+    "height": 3,
+    "type": "goods",
+    "id": 1102
+  },
+  "H_SpaceAgeAsteroidBelt_Townhall": {
+    "name": "Town Hall",
+    "width": 6,
+    "height": 7,
+    "type": "main_building",
+    "id": 1103
+  },
+  "H_SpaceAgeAsteroidBelt_Townhall2": {
+    "name": "Asteroid Colony Hub",
+    "width": 5,
+    "height": 5,
+    "type": "main_building",
+    "id": 1104
+  },
+  "K_SpaceAgeAsteroidBelt_Lifesupport1": {
+    "name": "Storage Container",
+    "width": 2,
+    "height": 2,
+    "type": "static_provider",
+    "id": 1105
+  },
+  "K_SpaceAgeAsteroidBelt_Lifesupport2": {
+    "name": "Fuel Tank",
+    "width": 2,
+    "height": 3,
+    "type": "static_provider",
+    "id": 1106
+  },
+  "K_SpaceAgeAsteroidBelt_Lifesupport3": {
+    "name": "Underground Reactor",
+    "width": 4,
+    "height": 2,
+    "type": "static_provider",
+    "id": 1107
+  },
+  "K_SpaceAgeAsteroidBelt_Lifesupport4": {
+    "name": "Space Wharf",
+    "width": 4,
+    "height": 4,
+    "type": "static_provider",
+    "id": 1108
+  },
+  "M_SpaceAgeAsteroidBelt_Military1": {
+    "name": "B.E.L.T. Site",
+    "width": 6,
+    "height": 5,
+    "type": "military",
+    "id": 1109
+  },
+  "M_SpaceAgeAsteroidBelt_Military2": {
+    "name": "Nail Storm Range",
+    "width": 4,
+    "height": 6,
+    "type": "military",
+    "id": 1110
+  },
+  "M_SpaceAgeAsteroidBelt_Military3": {
+    "name": "Drill Ranger Depot",
+    "width": 5,
+    "height": 5,
+    "type": "military",
+    "id": 1111
+  },
+  "M_SpaceAgeAsteroidBelt_Military4": {
+    "name": "Hover Hammer Parkour",
+    "width": 4,
+    "height": 7,
+    "type": "military",
+    "id": 1112
+  },
+  "M_SpaceAgeAsteroidBelt_Military5": {
+    "name": "Shredder Factory",
+    "width": 5,
+    "height": 5,
+    "type": "military",
+    "id": 1113
+  },
+  "P_SpaceAgeAsteroidBelt_Workshop1": {
+    "name": "Space Food Farm",
+    "width": 4,
+    "height": 4,
+    "type": "production",
+    "id": 1114
+  },
+  "P_SpaceAgeAsteroidBelt_Workshop2": {
+    "name": "Universe Data Telescope",
+    "width": 3,
+    "height": 3,
+    "type": "production",
+    "id": 1115
+  },
+  "R_MultiAge_ArcheologyBonus20a": {
+    "name": "Airship - Lv. 1",
+    "width": 3,
+    "height": 7,
+    "type": "residential",
+    "id": 1116
+  },
+  "R_MultiAge_ArcheologyBonus20b": {
+    "name": "Airship - Lv. 2",
+    "width": 3,
+    "height": 7,
+    "type": "residential",
+    "id": 1117
+  },
+  "R_MultiAge_ArcheologyBonus20c": {
+    "name": "Airship - Lv. 3",
+    "width": 3,
+    "height": 7,
+    "type": "residential",
+    "id": 1118
+  },
+  "R_MultiAge_ArcheologyBonus20d": {
+    "name": "Airship - Lv. 4",
+    "width": 3,
+    "height": 7,
+    "type": "residential",
+    "id": 1119
+  },
+  "R_MultiAge_ArcheologyBonus20e": {
+    "name": "Airship - Lv. 5",
+    "width": 3,
+    "height": 7,
+    "type": "residential",
+    "id": 1120
+  },
+  "R_MultiAge_ArcheologyBonus20f": {
+    "name": "Airship - Lv. 6",
+    "width": 3,
+    "height": 7,
+    "type": "residential",
+    "id": 1121
+  },
+  "R_MultiAge_ArcheologyBonus20g": {
+    "name": "Airship - Lv. 7",
+    "width": 3,
+    "height": 7,
+    "type": "residential",
+    "id": 1122
+  },
+  "R_MultiAge_ArcheologyBonus20h": {
+    "name": "Airship - Lv. 8",
+    "width": 3,
+    "height": 7,
+    "type": "residential",
+    "id": 1123
+  },
+  "R_MultiAge_ArcheologyBonus20i": {
+    "name": "Airship - Lv. 9",
+    "width": 3,
+    "height": 7,
+    "type": "residential",
+    "id": 1124
+  },
+  "R_MultiAge_ArcheologyBonus20j": {
+    "name": "Airship - Lv. 10",
+    "width": 3,
+    "height": 7,
+    "type": "residential",
+    "id": 1125
+  },
+  "R_MultiAge_ArcheologyBonus20k": {
+    "name": "Airship - Lv. 11",
+    "width": 3,
+    "height": 7,
+    "type": "residential",
+    "id": 1126
+  },
+  "R_MultiAge_Battlegrounds1f": {
+    "name": "Statue of Honor - Lv. 6",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1127
+  },
+  "R_MultiAge_Battlegrounds1g": {
+    "name": "Statue of Honor - Lv. 7",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1128
+  },
+  "R_MultiAge_Battlegrounds1h": {
+    "name": "Statue of Honor - Lv. 8",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1129
+  },
+  "R_SpaceAgeAsteroidBelt_Residential1": {
+    "name": "Living Space Residence",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1130
+  },
+  "R_SpaceAgeAsteroidBelt_Residential2": {
+    "name": "Low-Gravity Home",
+    "width": 3,
+    "height": 2,
+    "type": "residential",
+    "id": 1131
+  },
+  "R_SpaceAgeAsteroidBelt_Residential3": {
+    "name": "Movable Abode",
+    "width": 2,
+    "height": 2,
+    "type": "residential",
+    "id": 1132
+  },
+  "R_SpaceAgeAsteroidBelt_Residential4": {
+    "name": "Deep-Seated Housing",
+    "width": 3,
+    "height": 2,
+    "type": "residential",
+    "id": 1133
+  },
+  "R_SpaceAgeAsteroidBelt_Residential5": {
+    "name": "Vault House",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1134
+  },
+  "R_SpaceAgeAsteroidBelt_Residential6": {
+    "name": "Spaceview Residence",
+    "width": 4,
+    "height": 4,
+    "type": "residential",
+    "id": 1135
+  },
+  "S_SpaceAgeAsteroidBelt_CarStreet1": {
+    "name": "Automated Street",
+    "width": 2,
+    "height": 2,
+    "type": "street",
+    "id": 1136
+  },
+  "S_SpaceAgeAsteroidBelt_Street1": {
+    "name": "Conveyor Path",
+    "width": 1,
+    "height": 1,
+    "type": "street",
+    "id": 1137
+  },
+  "S_SpaceAgeAsteroidBelt_Street2": {
+    "name": "Asteroid Connector",
+    "width": 1,
+    "height": 1,
+    "type": "street",
+    "id": 1138
+  },
+  "X_SpaceAgeAsteroidBelt_Landmark1": {
+    "name": "Space Carrier",
+    "width": 4,
+    "height": 7,
+    "type": "greatbuilding",
+    "id": 1139
   }
 };
