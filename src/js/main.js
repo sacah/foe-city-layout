@@ -10,7 +10,9 @@ const buildingList = [];
 const grid = document.querySelector('.grid');
 
 document.querySelector('#addBuilding').addEventListener('click', (e) => {
-  gtag('send', 'event', 'menu', 'Add Building');
+  gtag('event', 'menu', {
+    'event_label': 'Add Building'
+  });
   grid.appendChild(createBuilding({
     cityentity_id: buildingDropdown.querySelector(`OPTION[value="${buildingInput.value}"]`).getAttribute('data-building-id'),
     x: 0,
