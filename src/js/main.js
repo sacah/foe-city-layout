@@ -29,17 +29,23 @@ dialogPolyfill.registerDialog(document.querySelector('#helpDialog'));
 dialogPolyfill.registerDialog(document.querySelector('#shareDialog'));
 
 document.querySelector('#importModal').addEventListener('click', (e) => {
-  gtag('send', 'event', 'menu', 'Import Modal');
+  gtag('event', 'menu', {
+    'event_label': 'Import Modal'
+  });
   document.querySelector('#importDialog').showModal();
 });
 
 document.querySelector('#helpModal').addEventListener('click', (e) => {
-  gtag('send', 'event', 'menu', 'Help Modal');
+  gtag('event', 'menu', {
+    'event_label': 'Help Modal'
+  });
   document.querySelector('#helpDialog').showModal();
 });
 
 document.querySelector('#import').addEventListener('click', (e) => {
-  gtag('send', 'event', 'import', 'Import');
+  gtag('event', 'import_modal', {
+    'event_label': 'Import'
+  });
   let mapStr = document.querySelector('#mapJSON').value.trim().replace(/^"|"$/g, '');
   let cityStr = document.querySelector('#cityJSON').value.trim().replace(/^"|"$/g, '');
   mapData = JSON.parse(mapStr);
@@ -49,13 +55,17 @@ document.querySelector('#import').addEventListener('click', (e) => {
 });
 
 document.querySelector('#share').addEventListener('click', (e) => {
-  gtag('send', 'event', 'menu', 'Share');
+  gtag('event', 'menu', {
+    'event_label': 'Share'
+  });
   document.querySelector('#shareDialog').showModal();
   document.querySelector('#shareLink').value = generateShareLink();
 });
 
 document.querySelector('#save').addEventListener('click', (e) => {
-  gtag('send', 'event', 'menu', 'Save');
+  gtag('event', 'menu', {
+    'event_label': 'Save'
+  });
   localStorage.setItem('saved-city-data', JSON.stringify(getMapLayout()));
   localStorage.setItem('saved-map-data', JSON.stringify(mapData));
 });
