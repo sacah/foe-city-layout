@@ -10,7 +10,7 @@ const buildingList = [];
 const grid = document.querySelector('.grid');
 
 document.querySelector('#addBuilding').addEventListener('click', (e) => {
-  ga('send', 'event', 'menu', 'Add Building');
+  gtag('send', 'event', 'menu', 'Add Building');
   grid.appendChild(createBuilding({
     cityentity_id: buildingDropdown.querySelector(`OPTION[value="${buildingInput.value}"]`).getAttribute('data-building-id'),
     x: 0,
@@ -29,17 +29,17 @@ dialogPolyfill.registerDialog(document.querySelector('#helpDialog'));
 dialogPolyfill.registerDialog(document.querySelector('#shareDialog'));
 
 document.querySelector('#importModal').addEventListener('click', (e) => {
-  ga('send', 'event', 'menu', 'Import Modal');
+  gtag('send', 'event', 'menu', 'Import Modal');
   document.querySelector('#importDialog').showModal();
 });
 
 document.querySelector('#helpModal').addEventListener('click', (e) => {
-  ga('send', 'event', 'menu', 'Help Modal');
+  gtag('send', 'event', 'menu', 'Help Modal');
   document.querySelector('#helpDialog').showModal();
 });
 
 document.querySelector('#import').addEventListener('click', (e) => {
-  ga('send', 'event', 'import', 'Import');
+  gtag('send', 'event', 'import', 'Import');
   let mapStr = document.querySelector('#mapJSON').value.trim().replace(/^"|"$/g, '');
   let cityStr = document.querySelector('#cityJSON').value.trim().replace(/^"|"$/g, '');
   mapData = JSON.parse(mapStr);
@@ -49,13 +49,13 @@ document.querySelector('#import').addEventListener('click', (e) => {
 });
 
 document.querySelector('#share').addEventListener('click', (e) => {
-  ga('send', 'event', 'menu', 'Share');
+  gtag('send', 'event', 'menu', 'Share');
   document.querySelector('#shareDialog').showModal();
   document.querySelector('#shareLink').value = generateShareLink();
 });
 
 document.querySelector('#save').addEventListener('click', (e) => {
-  ga('send', 'event', 'menu', 'Save');
+  gtag('send', 'event', 'menu', 'Save');
   localStorage.setItem('saved-city-data', JSON.stringify(getMapLayout()));
   localStorage.setItem('saved-map-data', JSON.stringify(mapData));
 });
