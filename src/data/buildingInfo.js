@@ -7978,5 +7978,362 @@ var buildingData = {
     "height": 7,
     "type": "greatbuilding",
     "id": 1139
+  },
+  "A_MultiAge_FallBonus20": {
+    "name": "Primrose Bloom",
+    "width": 2,
+    "height": 3,
+    "type": "culture",
+    "id": 1140
+  },
+  "A_MultiAge_SportBonus17b": {
+    "name": "Winners' Plaza - Lv. 2",
+    "width": 3,
+    "height": 3,
+    "type": "culture",
+    "id": 1141
+  },
+  "D_MultiAge_Battlegrounds2": {
+    "name": "Road to Victory",
+    "width": 2,
+    "height": 3,
+    "type": "decoration",
+    "id": 1142
+  },
+  "D_MultiAge_Expedition16c": {
+    "name": "Face of the Ancient - Lv. 2",
+    "width": 2,
+    "height": 2,
+    "type": "decoration",
+    "id": 1143
+  },
+  "D_MultiAge_Expedition16d": {
+    "name": "Gate of the Sun God - Lv. 2",
+    "width": 2,
+    "height": 2,
+    "type": "decoration",
+    "id": 1144
+  },
+  "D_MultiAge_FallBonus20a": {
+    "name": "Wheat Field",
+    "width": 2,
+    "height": 3,
+    "type": "decoration",
+    "id": 1145
+  },
+  "D_MultiAge_FallBonus20b": {
+    "name": "Ochre Yard",
+    "width": 2,
+    "height": 2,
+    "type": "decoration",
+    "id": 1146
+  },
+  "D_MultiAge_SoccerBonus20Leukoi": {
+    "name": "Leukoi Track",
+    "width": 4,
+    "height": 1,
+    "type": "decoration",
+    "id": 1147
+  },
+  "D_MultiAge_SoccerBonus20Rousioi": {
+    "name": "Rousioi Track",
+    "width": 4,
+    "height": 1,
+    "type": "decoration",
+    "id": 1148
+  },
+  "D_MultiAge_SoccerBonus20Venetoi": {
+    "name": "Venetoi Track",
+    "width": 4,
+    "height": 1,
+    "type": "decoration",
+    "id": 1149
+  },
+  "L_AllAge_Expedition16Small": {
+    "name": "Little Fountain of Youth",
+    "width": 2,
+    "height": 3,
+    "type": "random_production",
+    "id": 1150
+  },
+  "L_AllAge_FallBonus20a": {
+    "name": "Begonia Bench",
+    "width": 3,
+    "height": 1,
+    "type": "random_production",
+    "id": 1151
+  },
+  "L_AllAge_FallBonus20b": {
+    "name": "Autumn Scarecrow",
+    "width": 3,
+    "height": 1,
+    "type": "random_production",
+    "id": 1152
+  },
+  "P_MultiAge_Expedition16b": {
+    "name": "Terrace Farm - Lv. 2",
+    "width": 6,
+    "height": 5,
+    "type": "production",
+    "id": 1153
+  },
+  "R_MultiAge_Expedition16c": {
+    "name": "Tribal Square - Lv. 2",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1154
+  },
+  "R_MultiAge_Expedition16d": {
+    "name": "Sacred Sky Watch - Lv. 2",
+    "width": 2,
+    "height": 3,
+    "type": "residential",
+    "id": 1155
+  },
+  "R_MultiAge_FallBonus20a": {
+    "name": "Harvest Barn - Lv. 1",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1156
+  },
+  "R_MultiAge_FallBonus20b": {
+    "name": "Harvest Barn - Lv. 2",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1157
+  },
+  "R_MultiAge_FallBonus20c": {
+    "name": "Harvest Barn - Lv. 3",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1158
+  },
+  "R_MultiAge_FallBonus20d": {
+    "name": "Harvest Barn - Lv. 4",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1159
+  },
+  "R_MultiAge_FallBonus20e": {
+    "name": "Sunflower Patch",
+    "width": 2,
+    "height": 3,
+    "type": "residential",
+    "id": 1160
+  },
+  "R_MultiAge_SoccerBonus20a": {
+    "name": "Hippodrome Carceres - Lv. 1",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1161
+  },
+  "R_MultiAge_SoccerBonus20b": {
+    "name": "Hippodrome Carceres - Lv. 2",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1162
+  },
+  "R_MultiAge_SoccerBonus20c": {
+    "name": "Hippodrome Carceres - Lv. 3",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1163
+  },
+  "R_MultiAge_SoccerBonus20d": {
+    "name": "Hippodrome Carceres - Lv. 4",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1164
+  },
+  "R_MultiAge_SoccerBonus20e": {
+    "name": "Hippodrome Carceres - Lv. 5",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1165
+  },
+  "R_MultiAge_SoccerBonus20f": {
+    "name": "Hippodrome Carceres - Lv. 6",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1166
+  },
+  "R_MultiAge_SoccerBonus20g": {
+    "name": "Hippodrome Sphendone - Lv. 1",
+    "width": 4,
+    "height": 4,
+    "type": "residential",
+    "id": 1167
+  },
+  "R_MultiAge_SoccerBonus20h": {
+    "name": "Hippodrome Sphendone - Lv. 2",
+    "width": 4,
+    "height": 4,
+    "type": "residential",
+    "id": 1168
+  },
+  "R_MultiAge_SoccerBonus20i": {
+    "name": "Hippodrome Sphendone - Lv. 3",
+    "width": 4,
+    "height": 4,
+    "type": "residential",
+    "id": 1169
+  },
+  "R_MultiAge_SoccerBonus20j": {
+    "name": "Hippodrome Sphendone - Lv. 4",
+    "width": 4,
+    "height": 4,
+    "type": "residential",
+    "id": 1170
+  },
+  "R_MultiAge_SoccerBonus20k": {
+    "name": "Hippodrome Sphendone - Lv. 5",
+    "width": 4,
+    "height": 4,
+    "type": "residential",
+    "id": 1171
+  },
+  "R_MultiAge_SoccerBonus20l": {
+    "name": "Hippodrome Sphendone - Lv. 6",
+    "width": 4,
+    "height": 4,
+    "type": "residential",
+    "id": 1172
+  },
+  "R_MultiAge_SummerBonus20a": {
+    "name": "Governor's Villa - Lv. 1",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1173
+  },
+  "R_MultiAge_SummerBonus20b": {
+    "name": "Governor's Villa - Lv. 2",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1174
+  },
+  "R_MultiAge_SummerBonus20c": {
+    "name": "Governor's Villa - Lv. 3",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1175
+  },
+  "R_MultiAge_SummerBonus20d": {
+    "name": "Governor's Villa - Lv. 4",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1176
+  },
+  "R_MultiAge_SummerBonus20e": {
+    "name": "Governor's Villa - Lv. 5",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1177
+  },
+  "R_MultiAge_SummerBonus20f": {
+    "name": "Governor's Villa - Lv. 6",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1178
+  },
+  "R_MultiAge_SummerBonus20g": {
+    "name": "Governor's Villa - Lv. 7",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1179
+  },
+  "R_MultiAge_SummerBonus20h": {
+    "name": "Governor's Villa - Lv. 8",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1180
+  },
+  "R_MultiAge_SummerBonus20i": {
+    "name": "Governor's Villa - Lv. 9",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1181
+  },
+  "T_AllAge_Expedition16b": {
+    "name": "Ritual Flame - Lv. 2",
+    "width": 1,
+    "height": 2,
+    "type": "tower",
+    "id": 1182
+  },
+  "V_EarlyMiddleAge_Harbor": {
+    "name": "Harbor",
+    "width": 7,
+    "height": 13,
+    "type": "off_grid",
+    "id": 1183
+  },
+  "V_IndustrialAge_Harbor": {
+    "name": "Harbor",
+    "width": 7,
+    "height": 13,
+    "type": "off_grid",
+    "id": 1184
+  },
+  "V_IronAge_GuildExpedition": {
+    "name": "Guild Expeditions",
+    "width": 5,
+    "height": 8,
+    "type": "off_grid",
+    "id": 1185
+  },
+  "V_IronAge_Harbor": {
+    "name": "Harbor",
+    "width": 7,
+    "height": 13,
+    "type": "off_grid",
+    "id": 1186
+  },
+  "V_StoneAge_GuildExpedition": {
+    "name": "Guild Expeditions",
+    "width": 5,
+    "height": 8,
+    "type": "off_grid",
+    "id": 1187
+  },
+  "V_StoneAge_Harbor": {
+    "name": "Harbor",
+    "width": 7,
+    "height": 13,
+    "type": "off_grid",
+    "id": 1188
+  },
+  "Y_VirtualFuture_Ship1": {
+    "name": "Spaceport",
+    "width": 7,
+    "height": 8,
+    "type": "outpost_ship",
+    "id": 1189
+  },
+  "Z_MultiAge_CupBonus1b": {
+    "name": "Hall of Fame - Lv. 2",
+    "width": 3,
+    "height": 3,
+    "type": "clan_power_production",
+    "id": 1190
   }
 };
