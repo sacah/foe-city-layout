@@ -8335,5 +8335,68 @@ var buildingData = {
     "height": 3,
     "type": "clan_power_production",
     "id": 1190
+  },
+  "R_MultiAge_HalloweenBonus20a": {
+    "name": "House of Horrors - Lv. 1",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1191
+  },
+  "R_MultiAge_HalloweenBonus20b": {
+    "name": "House of Horrors - Lv. 2",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1192
+  },
+  "R_MultiAge_HalloweenBonus20c": {
+    "name": "House of Horrors - Lv. 3",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1193
+  },
+  "R_MultiAge_HalloweenBonus20d": {
+    "name": "House of Horrors - Lv. 4",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1194
+  },
+  "R_MultiAge_HalloweenBonus20e": {
+    "name": "House of Horrors - Lv. 5",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1195
+  },
+  "R_MultiAge_HalloweenBonus20f": {
+    "name": "House of Horrors - Lv. 6",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1196
+  },
+  "R_MultiAge_HalloweenBonus20gClown": {
+    "name": "House of the Clown",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1197
+  },
+  "R_MultiAge_HalloweenBonus20gDemon": {
+    "name": "House of the Demon",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1198
+  },
+  "R_MultiAge_HalloweenBonus20gWolf": {
+    "name": "House of the Wolf",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1199
   }
 };
