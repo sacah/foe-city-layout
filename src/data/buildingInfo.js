@@ -8398,5 +8398,313 @@ var buildingData = {
     "height": 3,
     "type": "residential",
     "id": 1199
+  },
+  "B_Aztecs_CulturalGoodsProduction1": {
+    "name": "Vegetable Garden",
+    "width": 3,
+    "height": 4,
+    "type": "cultural_goods_production",
+    "id": 1200
+  },
+  "B_Aztecs_CulturalGoodsProduction2": {
+    "name": "Quetzal Aviary",
+    "width": 3,
+    "height": 3,
+    "type": "cultural_goods_production",
+    "id": 1201
+  },
+  "B_Aztecs_CulturalGoodsProduction3": {
+    "name": "Maize Farm",
+    "width": 5,
+    "height": 3,
+    "type": "cultural_goods_production",
+    "id": 1202
+  },
+  "B_Aztecs_CulturalGoodsProduction4": {
+    "name": "Stone Carver",
+    "width": 4,
+    "height": 4,
+    "type": "cultural_goods_production",
+    "id": 1203
+  },
+  "H_Aztecs_Townhall": {
+    "name": "Embassy",
+    "width": 5,
+    "height": 5,
+    "type": "main_building",
+    "id": 1204
+  },
+  "I_Aztecs_Impediment1": {
+    "name": "Impediment1",
+    "width": 1,
+    "height": 2,
+    "type": "impediment",
+    "id": 1205
+  },
+  "I_Aztecs_Impediment2": {
+    "name": "Impediment2",
+    "width": 2,
+    "height": 1,
+    "type": "impediment",
+    "id": 1206
+  },
+  "J_Aztecs_Diplomacy1": {
+    "name": "Honoring Sculpture",
+    "width": 1,
+    "height": 1,
+    "type": "diplomacy",
+    "id": 1207
+  },
+  "J_Aztecs_Diplomacy2": {
+    "name": "Decorative Statue",
+    "width": 3,
+    "height": 1,
+    "type": "diplomacy",
+    "id": 1208
+  },
+  "J_Aztecs_Diplomacy3": {
+    "name": "Ornamental Statue",
+    "width": 1,
+    "height": 3,
+    "type": "diplomacy",
+    "id": 1209
+  },
+  "J_Aztecs_Diplomacy4": {
+    "name": "Sun Stone",
+    "width": 3,
+    "height": 3,
+    "type": "diplomacy",
+    "id": 1210
+  },
+  "J_Aztecs_Diplomacy5": {
+    "name": "Simple Shrine",
+    "width": 2,
+    "height": 2,
+    "type": "diplomacy",
+    "id": 1211
+  },
+  "J_Aztecs_Diplomacy6": {
+    "name": "Texcotzingo",
+    "width": 3,
+    "height": 4,
+    "type": "diplomacy",
+    "id": 1212
+  },
+  "J_Aztecs_Diplomacy7": {
+    "name": "Great Temple",
+    "width": 5,
+    "height": 3,
+    "type": "diplomacy",
+    "id": 1213
+  },
+  "R_Aztecs_Residential1": {
+    "name": "Macehualtin Hut",
+    "width": 2,
+    "height": 2,
+    "type": "residential",
+    "id": 1214
+  },
+  "R_Aztecs_Residential2": {
+    "name": "Yaoteguihua Residence",
+    "width": 3,
+    "height": 3,
+    "type": "residential",
+    "id": 1215
+  },
+  "R_Aztecs_Residential3": {
+    "name": "Pipiltin Palace",
+    "width": 3,
+    "height": 5,
+    "type": "residential",
+    "id": 1216
+  },
+  "R_MultiAge_CulturalBuilding7a": {
+    "name": "Sun Temple - Lv. 1",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1217
+  },
+  "R_MultiAge_CulturalBuilding7b": {
+    "name": "Sun Temple - Lv. 2",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1218
+  },
+  "R_MultiAge_CulturalBuilding7c": {
+    "name": "Sun Temple - Lv. 3",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1219
+  },
+  "R_MultiAge_CulturalBuilding7d": {
+    "name": "Sun Temple - Lv. 4",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1220
+  },
+  "R_MultiAge_CulturalBuilding7e": {
+    "name": "Sun Temple - Lv. 5",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1221
+  },
+  "R_MultiAge_CulturalBuilding7f": {
+    "name": "Sun Temple - Lv. 6",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1222
+  },
+  "R_MultiAge_CulturalBuilding7g": {
+    "name": "Sun Temple - Lv. 7",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1223
+  },
+  "R_MultiAge_CulturalBuilding7h": {
+    "name": "Sun Temple - Lv. 8",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1224
+  },
+  "R_MultiAge_CulturalBuilding7i": {
+    "name": "Sun Temple - Lv. 9",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1225
+  },
+  "R_MultiAge_CulturalBuilding8a": {
+    "name": "Jade Statue - Lv. 1",
+    "width": 2,
+    "height": 2,
+    "type": "residential",
+    "id": 1226
+  },
+  "R_MultiAge_CulturalBuilding8b": {
+    "name": "Jade Statue - Lv. 2",
+    "width": 2,
+    "height": 2,
+    "type": "residential",
+    "id": 1227
+  },
+  "R_MultiAge_CulturalBuilding8c": {
+    "name": "Jade Statue - Lv. 3",
+    "width": 2,
+    "height": 2,
+    "type": "residential",
+    "id": 1228
+  },
+  "R_MultiAge_CulturalBuilding8d": {
+    "name": "Jade Statue - Lv. 4",
+    "width": 2,
+    "height": 2,
+    "type": "residential",
+    "id": 1229
+  },
+  "R_MultiAge_CulturalBuilding8e": {
+    "name": "Jade Statue - Lv. 5",
+    "width": 2,
+    "height": 2,
+    "type": "residential",
+    "id": 1230
+  },
+  "R_MultiAge_WinterBonus20a": {
+    "name": "Winter Bakery - Lv. 1",
+    "width": 5,
+    "height": 3,
+    "type": "residential",
+    "id": 1231
+  },
+  "R_MultiAge_WinterBonus20b": {
+    "name": "Winter Bakery - Lv. 2",
+    "width": 5,
+    "height": 3,
+    "type": "residential",
+    "id": 1232
+  },
+  "R_MultiAge_WinterBonus20c": {
+    "name": "Winter Bakery - Lv. 3",
+    "width": 5,
+    "height": 3,
+    "type": "residential",
+    "id": 1233
+  },
+  "R_MultiAge_WinterBonus20d": {
+    "name": "Winter Bakery - Lv. 4",
+    "width": 5,
+    "height": 3,
+    "type": "residential",
+    "id": 1234
+  },
+  "R_MultiAge_WinterBonus20e": {
+    "name": "Winter Bakery - Lv. 5",
+    "width": 5,
+    "height": 3,
+    "type": "residential",
+    "id": 1235
+  },
+  "R_MultiAge_WinterBonus20fGingerbread": {
+    "name": "Gingerbread Bakery",
+    "width": 5,
+    "height": 3,
+    "type": "residential",
+    "id": 1236
+  },
+  "R_MultiAge_WinterBonus20fLussebullar": {
+    "name": "Lussebullar Bakery",
+    "width": 5,
+    "height": 3,
+    "type": "residential",
+    "id": 1237
+  },
+  "R_MultiAge_WinterBonus20fMarzipan": {
+    "name": "Marzipan Bakery",
+    "width": 5,
+    "height": 3,
+    "type": "residential",
+    "id": 1238
+  },
+  "R_MultiAge_WinterBonus20fPatisserie": {
+    "name": "Macaron Bakery",
+    "width": 5,
+    "height": 3,
+    "type": "residential",
+    "id": 1239
+  },
+  "S_Aztecs_Street1": {
+    "name": "Simple Path",
+    "width": 1,
+    "height": 1,
+    "type": "street",
+    "id": 1240
+  },
+  "V_Aztecs_Courtyard": {
+    "name": "Courtyard Market",
+    "width": 6,
+    "height": 8,
+    "type": "off_grid",
+    "id": 1241
+  },
+  "X_AllAge_Galata": {
+    "name": "Galata Tower",
+    "width": 3,
+    "height": 3,
+    "type": "greatbuilding",
+    "id": 1242
+  },
+  "Y_Aztecs_Ship1": {
+    "name": "Tlatoani Ferry",
+    "width": 2,
+    "height": 5,
+    "type": "outpost_ship",
+    "id": 1243
   }
 };
