@@ -8706,5 +8706,236 @@ var buildingData = {
     "height": 5,
     "type": "outpost_ship",
     "id": 1243
+  },
+  "D_MultiAge_SportBonus21Cypress": {
+    "name": "Cypress Pass",
+    "width": 2,
+    "height": 5,
+    "type": "decoration",
+    "id": 1244
+  },
+  "D_MultiAge_SportBonus21Grapevines": {
+    "name": "Grapevines",
+    "width": 2,
+    "height": 5,
+    "type": "decoration",
+    "id": 1245
+  },
+  "D_MultiAge_SportBonus21Lavender": {
+    "name": "Lavender Lawn",
+    "width": 2,
+    "height": 5,
+    "type": "decoration",
+    "id": 1246
+  },
+  "D_MultiAge_SportBonus21Olive": {
+    "name": "Olive Grove",
+    "width": 2,
+    "height": 5,
+    "type": "decoration",
+    "id": 1247
+  },
+  "R_MultiAge_PatrickBonus21a": {
+    "name": "Druid Temple - Lv. 1",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1248
+  },
+  "R_MultiAge_PatrickBonus21b": {
+    "name": "Druid Temple - Lv. 2",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1249
+  },
+  "R_MultiAge_PatrickBonus21c": {
+    "name": "Druid Temple - Lv. 3",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1250
+  },
+  "R_MultiAge_PatrickBonus21d": {
+    "name": "Druid Temple - Lv. 4",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1251
+  },
+  "R_MultiAge_PatrickBonus21e": {
+    "name": "Druid Temple - Lv. 5",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1252
+  },
+  "R_MultiAge_PatrickBonus21f": {
+    "name": "Druid Temple - Lv. 6",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1253
+  },
+  "R_MultiAge_PatrickBonus21g": {
+    "name": "Druid Temple - Lv. 7",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1254
+  },
+  "R_MultiAge_PatrickBonus21h": {
+    "name": "Druid Temple - Lv. 8",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1255
+  },
+  "R_MultiAge_PatrickBonus21i": {
+    "name": "Druid Temple - Lv. 9",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1256
+  },
+  "R_MultiAge_PatrickBonus21j": {
+    "name": "Druid Temple - Lv. 10",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1257
+  },
+  "R_MultiAge_SportBonus21a": {
+    "name": "Terracotta Vineyard - Lv. 1",
+    "width": 3,
+    "height": 5,
+    "type": "residential",
+    "id": 1258
+  },
+  "R_MultiAge_SportBonus21b": {
+    "name": "Terracotta Vineyard - Lv. 2",
+    "width": 3,
+    "height": 5,
+    "type": "residential",
+    "id": 1259
+  },
+  "R_MultiAge_SportBonus21c": {
+    "name": "Terracotta Vineyard - Lv. 3",
+    "width": 3,
+    "height": 5,
+    "type": "residential",
+    "id": 1260
+  },
+  "R_MultiAge_SportBonus21d": {
+    "name": "Terracotta Vineyard - Lv. 4",
+    "width": 3,
+    "height": 5,
+    "type": "residential",
+    "id": 1261
+  },
+  "R_MultiAge_SportBonus21e": {
+    "name": "Terracotta Vineyard - Lv. 5",
+    "width": 3,
+    "height": 5,
+    "type": "residential",
+    "id": 1262
+  },
+  "R_MultiAge_SportBonus21f": {
+    "name": "Terracotta Vineyard - Lv. 6",
+    "width": 3,
+    "height": 5,
+    "type": "residential",
+    "id": 1263
+  },
+  "R_MultiAge_SportBonus21g": {
+    "name": "Terracotta Vineyard - Lv. 7",
+    "width": 3,
+    "height": 5,
+    "type": "residential",
+    "id": 1264
+  },
+  "R_MultiAge_SportBonus21h": {
+    "name": "Terracotta Vineyard - Lv. 8",
+    "width": 3,
+    "height": 5,
+    "type": "residential",
+    "id": 1265
+  },
+  "R_MultiAge_SpringBonus21a": {
+    "name": "Suishun Mill - Lv. 1",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1266
+  },
+  "R_MultiAge_SpringBonus21b": {
+    "name": "Suishun Mill - Lv. 2",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1267
+  },
+  "R_MultiAge_SpringBonus21c": {
+    "name": "Suishun Mill - Lv. 3",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1268
+  },
+  "R_MultiAge_SpringBonus21d": {
+    "name": "Suishun Mill - Lv. 4",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1269
+  },
+  "R_MultiAge_SpringBonus21e": {
+    "name": "Suishun Mill - Lv. 5",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1270
+  },
+  "R_MultiAge_SpringBonus21f": {
+    "name": "Suishun Mill - Lv. 6",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1271
+  },
+  "R_MultiAge_SpringBonus21g": {
+    "name": "Suishun Mill - Lv. 7",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1272
+  },
+  "R_MultiAge_SpringBonus21h": {
+    "name": "Suishun Mill - Lv. 8",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1273
+  },
+  "R_MultiAge_SpringBonus21i": {
+    "name": "Suishun Mill - Lv. 9",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1274
+  },
+  "V_AllAge_ForgePlus": {
+    "name": "Forge Plus",
+    "width": 2,
+    "height": 2,
+    "type": "off_grid",
+    "id": 1275
+  },
+  "X_EarlyMiddleAge_Landmark3": {
+    "name": "Galata Tower",
+    "width": 3,
+    "height": 3,
+    "type": "greatbuilding",
+    "id": 1276
   }
 };
