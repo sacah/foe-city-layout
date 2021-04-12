@@ -3,6 +3,10 @@
   src: url("Armata-Regular.ttf") format("truetype");
 }
 
+P {
+  margin: 0;
+}
+
 .grid {
   background: #e7eae3;
 }

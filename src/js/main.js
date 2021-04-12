@@ -51,7 +51,11 @@ document.querySelector('#import').addEventListener('click', (e) => {
   let mapStr = document.querySelector('#mapJSON').value.trim().replace(/^"|"$/g, '');
   let cityStr = document.querySelector('#cityJSON').value.trim().replace(/^"|"$/g, '');
   mapData = JSON.parse(mapStr);
-  cityData = JSON.parse(cityStr);
+
+  if (mapData.CityMapData) {
+    cityData = mapData.CityMapData;
+    mapData = mapData.UnlockedAreas;
+  } else cityData = JSON.parse(cityStr);
 
   renderCity();
 });
