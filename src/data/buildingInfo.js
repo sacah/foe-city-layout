@@ -8937,5 +8937,341 @@ var buildingData = {
     "height": 3,
     "type": "greatbuilding",
     "id": 1276
+  },
+  "A_SpaceAgeVenus_Culture1": {
+    "name": "Sky Taxi",
+    "width": 5,
+    "height": 5,
+    "type": "culture",
+    "id": 1277
+  },
+  "A_SpaceAgeVenus_Culture2": {
+    "name": "Sky Cafe",
+    "width": 5,
+    "height": 3,
+    "type": "culture",
+    "id": 1278
+  },
+  "D_SpaceAgeVenus_Decoration1": {
+    "name": "Traffic Sign",
+    "width": 2,
+    "height": 2,
+    "type": "decoration",
+    "id": 1279
+  },
+  "G_SpaceAgeVenus_Goods1": {
+    "name": "Soy Farm",
+    "width": 4,
+    "height": 5,
+    "type": "goods",
+    "id": 1280
+  },
+  "G_SpaceAgeVenus_Goods10": {
+    "name": "Processed Material Synthesizer",
+    "width": 3,
+    "height": 3,
+    "type": "goods",
+    "id": 1281
+  },
+  "G_SpaceAgeVenus_Goods2": {
+    "name": "Microgreen Capsules",
+    "width": 5,
+    "height": 4,
+    "type": "goods",
+    "id": 1282
+  },
+  "G_SpaceAgeVenus_Goods3": {
+    "name": "Herb Garden",
+    "width": 4,
+    "height": 6,
+    "type": "goods",
+    "id": 1283
+  },
+  "G_SpaceAgeVenus_Goods4": {
+    "name": "Sugarcane Plantation",
+    "width": 5,
+    "height": 5,
+    "type": "goods",
+    "id": 1284
+  },
+  "G_SpaceAgeVenus_Goods5": {
+    "name": "Seaweed Farm",
+    "width": 4,
+    "height": 5,
+    "type": "goods",
+    "id": 1285
+  },
+  "G_SpaceAgeVenus_Goods6": {
+    "name": "Bromine Synthesizer",
+    "width": 3,
+    "height": 3,
+    "type": "goods",
+    "id": 1286
+  },
+  "G_SpaceAgeVenus_Goods7": {
+    "name": "Compound Fluid Synthesizer",
+    "width": 3,
+    "height": 3,
+    "type": "goods",
+    "id": 1287
+  },
+  "G_SpaceAgeVenus_Goods8": {
+    "name": "Nickel Synthesizer",
+    "width": 3,
+    "height": 3,
+    "type": "goods",
+    "id": 1288
+  },
+  "G_SpaceAgeVenus_Goods9": {
+    "name": "Platinum Crystal Synthesizer",
+    "width": 3,
+    "height": 3,
+    "type": "goods",
+    "id": 1289
+  },
+  "G_SpaceAgeVenus_SpecialGoods1": {
+    "name": "Asteroid Ice Synthesizer",
+    "width": 3,
+    "height": 3,
+    "type": "goods",
+    "id": 1290
+  },
+  "H_SpaceAgeVenus_Townhall": {
+    "name": "Town Hall",
+    "width": 6,
+    "height": 7,
+    "type": "main_building",
+    "id": 1291
+  },
+  "H_SpaceAgeVenus_Townhall2": {
+    "name": "Town Hall",
+    "width": 5,
+    "height": 5,
+    "type": "main_building",
+    "id": 1292
+  },
+  "K_SpaceAgeVenus_Lifesupport1": {
+    "name": "Gas Tank",
+    "width": 2,
+    "height": 2,
+    "type": "static_provider",
+    "id": 1293
+  },
+  "K_SpaceAgeVenus_Lifesupport2": {
+    "name": "Maintenance Ship",
+    "width": 3,
+    "height": 2,
+    "type": "static_provider",
+    "id": 1294
+  },
+  "K_SpaceAgeVenus_Lifesupport3": {
+    "name": "Cargo Platform",
+    "width": 2,
+    "height": 4,
+    "type": "static_provider",
+    "id": 1295
+  },
+  "K_SpaceAgeVenus_Lifesupport4": {
+    "name": "Gas Station",
+    "width": 4,
+    "height": 4,
+    "type": "static_provider",
+    "id": 1296
+  },
+  "M_SpaceAgeVenus_Military1": {
+    "name": "Observer Drone Platform",
+    "width": 6,
+    "height": 4,
+    "type": "military",
+    "id": 1297
+  },
+  "M_SpaceAgeVenus_Military2": {
+    "name": "Energy Cannon Constructor",
+    "width": 5,
+    "height": 6,
+    "type": "military",
+    "id": 1298
+  },
+  "M_SpaceAgeVenus_Military3": {
+    "name": "Ghost Blaster Production Line",
+    "width": 7,
+    "height": 4,
+    "type": "military",
+    "id": 1299
+  },
+  "M_SpaceAgeVenus_Military4": {
+    "name": "Power Dragon Firing Range",
+    "width": 5,
+    "height": 5,
+    "type": "military",
+    "id": 1300
+  },
+  "M_SpaceAgeVenus_Military5": {
+    "name": "Steel Fist Bunker",
+    "width": 5,
+    "height": 5,
+    "type": "military",
+    "id": 1301
+  },
+  "P_SpaceAgeVenus_Workshop1": {
+    "name": "Floating Garden",
+    "width": 4,
+    "height": 4,
+    "type": "production",
+    "id": 1302
+  },
+  "P_SpaceAgeVenus_Workshop2": {
+    "name": "Drone Hub",
+    "width": 3,
+    "height": 3,
+    "type": "production",
+    "id": 1303
+  },
+  "R_MultiAge_ArcheologyBonus21a": {
+    "name": "Ferris Wheel - Lv. 1",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1304
+  },
+  "R_MultiAge_ArcheologyBonus21b": {
+    "name": "Ferris Wheel - Lv. 2",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1305
+  },
+  "R_MultiAge_ArcheologyBonus21c": {
+    "name": "Ferris Wheel - Lv. 3",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1306
+  },
+  "R_MultiAge_ArcheologyBonus21d": {
+    "name": "Ferris Wheel - Lv. 4",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1307
+  },
+  "R_MultiAge_ArcheologyBonus21e": {
+    "name": "Ferris Wheel - Lv. 5",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1308
+  },
+  "R_MultiAge_ArcheologyBonus21f": {
+    "name": "Ferris Wheel - Lv. 6",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1309
+  },
+  "R_MultiAge_ArcheologyBonus21g": {
+    "name": "Ferris Wheel - Lv. 7",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1310
+  },
+  "R_MultiAge_ArcheologyBonus21h": {
+    "name": "Ferris Wheel - Lv. 8",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1311
+  },
+  "R_MultiAge_ArcheologyBonus21i": {
+    "name": "Ferris Wheel - Lv. 9",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1312
+  },
+  "R_MultiAge_ArcheologyBonus21jGreat": {
+    "name": "Great Wheel",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1313
+  },
+  "R_MultiAge_ArcheologyBonus21jWonder": {
+    "name": "Wonder Wheel",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1314
+  },
+  "R_SpaceAgeVenus_Residential1": {
+    "name": "Inflatable Dwelling",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1315
+  },
+  "R_SpaceAgeVenus_Residential2": {
+    "name": "Antigravity Residency",
+    "width": 3,
+    "height": 2,
+    "type": "residential",
+    "id": 1316
+  },
+  "R_SpaceAgeVenus_Residential3": {
+    "name": "Floating Shelter",
+    "width": 2,
+    "height": 2,
+    "type": "residential",
+    "id": 1317
+  },
+  "R_SpaceAgeVenus_Residential4": {
+    "name": "Inflatable Home",
+    "width": 2,
+    "height": 3,
+    "type": "residential",
+    "id": 1318
+  },
+  "R_SpaceAgeVenus_Residential5": {
+    "name": "Advanced Apartment",
+    "width": 4,
+    "height": 3,
+    "type": "residential",
+    "id": 1319
+  },
+  "R_SpaceAgeVenus_Residential6": {
+    "name": "Multipurpose Property",
+    "width": 3,
+    "height": 5,
+    "type": "residential",
+    "id": 1320
+  },
+  "S_SpaceAgeVenus_CarStreet1": {
+    "name": "Low-Grav Street",
+    "width": 2,
+    "height": 2,
+    "type": "street",
+    "id": 1321
+  },
+  "S_SpaceAgeVenus_Street1": {
+    "name": "Venus Timber Walk",
+    "width": 1,
+    "height": 1,
+    "type": "street",
+    "id": 1322
+  },
+  "S_SpaceAgeVenus_Street2": {
+    "name": "Horizon Path",
+    "width": 1,
+    "height": 1,
+    "type": "street",
+    "id": 1323
+  },
+  "X_SpaceAgeVenus_Landmark1": {
+    "name": "Flying Island",
+    "width": 6,
+    "height": 4,
+    "type": "greatbuilding",
+    "id": 1324
   }
 };
