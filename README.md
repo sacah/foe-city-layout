@@ -17,6 +17,7 @@ View the site [City layout tool](https://sacah.github.io/foe-city-layout/)
 ### 19/05/2021
 * Imported latest building data
 * Updated Readme with steps to update buildings
+* Fixed handling of copied text, not sure if Chrome changed JSON output
 
 ### 12/04/2021
 * Imported latest building data
