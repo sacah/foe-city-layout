@@ -27,9 +27,6 @@ describe('import dialog', () => {
   it('map json textarea exists', () => {
     assert.equal(nodeName(`#${contract.mapJSONTextId}`), 'textarea');
   });
-  it('city json textarea exists', () => {
-    assert.equal(nodeName(`#${contract.cityJSONTextId}`), 'textarea');
-  });
   it('import button exists', () => {
     assert.equal(nodeName(`#${contract.importBtnId}`), 'button');
   });

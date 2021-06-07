@@ -9273,5 +9273,187 @@ var buildingData = {
     "height": 4,
     "type": "greatbuilding",
     "id": 1324
+  },
+  "R_MultiAge_SoccerBonus21a": {
+    "name": "Athlon Abbey - Lv. 1",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1325
+  },
+  "R_MultiAge_SoccerBonus21b": {
+    "name": "Athlon Abbey - Lv. 2",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1326
+  },
+  "R_MultiAge_SoccerBonus21c": {
+    "name": "Athlon Abbey - Lv. 3",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1327
+  },
+  "R_MultiAge_SoccerBonus21d": {
+    "name": "Athlon Abbey - Lv. 4",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1328
+  },
+  "R_MultiAge_SoccerBonus21e": {
+    "name": "Athlon Abbey - Lv. 5",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1329
+  },
+  "R_MultiAge_SoccerBonus21f": {
+    "name": "Athlon Abbey - Lv. 6",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1330
+  },
+  "R_MultiAge_SoccerBonus21g": {
+    "name": "Athlon Abbey - Lv. 7",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1331
+  },
+  "R_MultiAge_SoccerBonus21h": {
+    "name": "Athlon Abbey - Lv. 8",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1332
+  },
+  "R_MultiAge_SoccerBonus21i": {
+    "name": "Athlon Abbey - Lv. 9",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1333
+  },
+  "R_MultiAge_SoccerBonus21j": {
+    "name": "Athlon Abbey - Lv. 10",
+    "width": 4,
+    "height": 5,
+    "type": "residential",
+    "id": 1334
+  },
+  "V_AllAge_EventHub21AdditionA": {
+    "name": "EventHub21AdditionA",
+    "width": 2,
+    "height": 2,
+    "type": "off_grid",
+    "id": 1335
+  },
+  "V_AllAge_EventHub21AdditionALocked": {
+    "name": "EventHub21AdditionALocked",
+    "width": 2,
+    "height": 2,
+    "type": "off_grid",
+    "id": 1336
+  },
+  "V_AllAge_EventHub21AdditionB": {
+    "name": "EventHub21AdditionB",
+    "width": 1,
+    "height": 1,
+    "type": "off_grid",
+    "id": 1337
+  },
+  "V_AllAge_EventHub21AdditionBLocked": {
+    "name": "EventHub21AdditionBLocked",
+    "width": 1,
+    "height": 1,
+    "type": "off_grid",
+    "id": 1338
+  },
+  "V_AllAge_EventHub21AdditionC": {
+    "name": "EventHub21AdditionC",
+    "width": 2,
+    "height": 2,
+    "type": "off_grid",
+    "id": 1339
+  },
+  "V_AllAge_EventHub21AdditionCLocked": {
+    "name": "EventHub21AdditionCLocked",
+    "width": 2,
+    "height": 2,
+    "type": "off_grid",
+    "id": 1340
+  },
+  "V_AllAge_EventHub21AdditionD": {
+    "name": "EventHub21AdditionD",
+    "width": 2,
+    "height": 2,
+    "type": "off_grid",
+    "id": 1341
+  },
+  "V_AllAge_EventHub21AdditionDLocked": {
+    "name": "EventHub21AdditionDLocked",
+    "width": 2,
+    "height": 2,
+    "type": "off_grid",
+    "id": 1342
+  },
+  "V_AllAge_EventHub21AdditionE": {
+    "name": "EventHub21AdditionE",
+    "width": 2,
+    "height": 2,
+    "type": "off_grid",
+    "id": 1343
+  },
+  "V_AllAge_EventHub21AdditionELocked": {
+    "name": "EventHub21AdditionELocked",
+    "width": 2,
+    "height": 2,
+    "type": "off_grid",
+    "id": 1344
+  },
+  "V_AllAge_EventHub21AdditionF": {
+    "name": "EventHub21AdditionF",
+    "width": 2,
+    "height": 2,
+    "type": "off_grid",
+    "id": 1345
+  },
+  "V_AllAge_EventHub21AdditionFLocked": {
+    "name": "EventHub21AdditionFLocked",
+    "width": 2,
+    "height": 2,
+    "type": "off_grid",
+    "id": 1346
+  },
+  "V_AllAge_EventHub21Base": {
+    "name": "Event Hub",
+    "width": 14,
+    "height": 8,
+    "type": "off_grid",
+    "id": 1347
+  },
+  "V_AllAge_EventHub21BaseA": {
+    "name": "EventHub21BaseA",
+    "width": 12,
+    "height": 6,
+    "type": "off_grid",
+    "id": 1348
+  },
+  "V_IronAge_PVPArena": {
+    "name": "Tower",
+    "width": 6,
+    "height": 4,
+    "type": "off_grid",
+    "id": 1349
+  },
+  "V_StoneAge_PVPArena": {
+    "name": "Tower",
+    "width": 6,
+    "height": 4,
+    "type": "off_grid",
+    "id": 1350
   }
 };

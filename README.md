@@ -14,6 +14,10 @@ View the site [City layout tool](https://sacah.github.io/foe-city-layout/)
 9. Format the file
 
 ## Change log
+### 7/06/2021
+* Removed old import method, only option is FoE Helpers 'Copy citymap data' button in the 'Town overview' modal
+* Imported latest building data
+
 ### 19/05/2021
 * Imported latest building data
 * Updated Readme with steps to update buildings

@@ -9,8 +9,7 @@ module.exports = {
   saveBtnId: 'save',
   shareBtnId: 'share',
   helpModalBtnId: 'helpModal',
-  mapJSONTextId: 'mapJSON',
-  cityJSONTextId: 'cityJSON',
+  mapJSONTextId: 'citymapJSON',
   shareLinkTextId: 'shareLink',
   importBtnId: 'import',
 }

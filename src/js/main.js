@@ -48,18 +48,11 @@ document.querySelector('#import').addEventListener('click', (e) => {
   gtag('event', 'import_modal', {
     'event_label': 'Import'
   });
-  let mapStr = document.querySelector('#mapJSON').value.trim();//.replace(/^"|"$/g, '');
-  let cityStr = document.querySelector('#cityJSON').value.trim();//.replace(/^"|"$/g, '');
+  let mapStr = document.querySelector('#citymapJSON').value.trim();
+  let cityStr = '';
   mapData = JSON.parse(mapStr);
-  if (typeof mapData === 'string') {
-    mapData = JSON.parse(mapData);
-  }
-
-  if (mapData.CityMapData) {
-    cityData = mapData.CityMapData;
-    mapData = mapData.UnlockedAreas;
-  } else cityData = JSON.parse(JSON.parse(cityStr));
-
+  cityData = mapData.CityMapData;
+  mapData = mapData.UnlockedAreas;
   renderCity();
 });
 
