@@ -9455,5 +9455,68 @@ var buildingData = {
     "height": 4,
     "type": "off_grid",
     "id": 1350
+  },
+  "R_MultiAge_WildBonus21a": {
+    "name": "Mountain Reserve - Lv. 1",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1351
+  },
+  "R_MultiAge_WildBonus21b": {
+    "name": "Mountain Reserve - Lv. 2",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1352
+  },
+  "R_MultiAge_WildBonus21c": {
+    "name": "Mountain Reserve - Lv. 3",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1353
+  },
+  "R_MultiAge_WildBonus21d": {
+    "name": "Mountain Reserve - Lv. 4",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1354
+  },
+  "R_MultiAge_WildBonus21e": {
+    "name": "Mountain Reserve - Lv. 5",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1355
+  },
+  "R_MultiAge_WildBonus21f": {
+    "name": "Mountain Reserve - Lv. 6",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1356
+  },
+  "R_MultiAge_WildBonus21gBear": {
+    "name": "Bear Mountain",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1357
+  },
+  "R_MultiAge_WildBonus21gEagle": {
+    "name": "Eagle Mountain",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1358
+  },
+  "R_MultiAge_WildBonus21gMoose": {
+    "name": "Moose Mountain",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1359
   }
 };
