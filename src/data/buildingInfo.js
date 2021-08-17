@@ -9518,5 +9518,278 @@ var buildingData = {
     "height": 4,
     "type": "residential",
     "id": 1359
+  },
+  "B_Mughals_CulturalGoodsProduction1": {
+    "name": "Rice Paddy",
+    "width": 3,
+    "height": 4,
+    "type": "cultural_goods_production",
+    "id": 1360
+  },
+  "B_Mughals_CulturalGoodsProduction2": {
+    "name": "Saree Weaver",
+    "width": 3,
+    "height": 3,
+    "type": "cultural_goods_production",
+    "id": 1361
+  },
+  "B_Mughals_CulturalGoodsProduction3": {
+    "name": "Spice Trader",
+    "width": 3,
+    "height": 4,
+    "type": "cultural_goods_production",
+    "id": 1362
+  },
+  "B_Mughals_CulturalGoodsProduction4": {
+    "name": "Lotus Flowers Farm",
+    "width": 5,
+    "height": 3,
+    "type": "cultural_goods_production",
+    "id": 1363
+  },
+  "D_MultiAge_SummerBonus21Boat": {
+    "name": "Captain's Anchorage",
+    "width": 2,
+    "height": 5,
+    "type": "decoration",
+    "id": 1364
+  },
+  "D_MultiAge_SummerBonus21Pier": {
+    "name": "Fisherman's Pier",
+    "width": 2,
+    "height": 5,
+    "type": "decoration",
+    "id": 1365
+  },
+  "D_MultiAge_SummerBonus21Sharks": {
+    "name": "Shark Shallows",
+    "width": 2,
+    "height": 5,
+    "type": "decoration",
+    "id": 1366
+  },
+  "H_Mughals_Townhall": {
+    "name": "Embassy",
+    "width": 6,
+    "height": 9,
+    "type": "main_building",
+    "id": 1367
+  },
+  "I_Mughals_Impediment1": {
+    "name": "Impediment1",
+    "width": 1,
+    "height": 2,
+    "type": "impediment",
+    "id": 1368
+  },
+  "I_Mughals_Impediment2": {
+    "name": "Impediment2",
+    "width": 2,
+    "height": 1,
+    "type": "impediment",
+    "id": 1369
+  },
+  "J_Mughals_Diplomacy1": {
+    "name": "Water Canal",
+    "width": 3,
+    "height": 2,
+    "type": "diplomacy",
+    "id": 1370
+  },
+  "J_Mughals_Diplomacy2": {
+    "name": "Alley",
+    "width": 2,
+    "height": 3,
+    "type": "diplomacy",
+    "id": 1371
+  },
+  "J_Mughals_Diplomacy3": {
+    "name": "Chhatri",
+    "width": 2,
+    "height": 2,
+    "type": "diplomacy",
+    "id": 1372
+  },
+  "J_Mughals_Diplomacy4": {
+    "name": "Baldachin",
+    "width": 3,
+    "height": 3,
+    "type": "diplomacy",
+    "id": 1373
+  },
+  "J_Mughals_Diplomacy5": {
+    "name": "Charbagh",
+    "width": 3,
+    "height": 5,
+    "type": "diplomacy",
+    "id": 1374
+  },
+  "R_Mughals_Residential1": {
+    "name": "Bhavan",
+    "width": 2,
+    "height": 2,
+    "type": "residential",
+    "id": 1375
+  },
+  "R_Mughals_Residential2": {
+    "name": "Shanti Ghar",
+    "width": 3,
+    "height": 3,
+    "type": "residential",
+    "id": 1376
+  },
+  "R_Mughals_Residential3": {
+    "name": "Haveli",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1377
+  },
+  "R_MultiAge_CulturalBuilding10a": {
+    "name": "Minaret - Lv. 1",
+    "width": 2,
+    "height": 2,
+    "type": "residential",
+    "id": 1378
+  },
+  "R_MultiAge_CulturalBuilding10b": {
+    "name": "Minaret - Lv. 2",
+    "width": 2,
+    "height": 2,
+    "type": "residential",
+    "id": 1379
+  },
+  "R_MultiAge_CulturalBuilding10c": {
+    "name": "Minaret - Lv. 3",
+    "width": 2,
+    "height": 2,
+    "type": "residential",
+    "id": 1380
+  },
+  "R_MultiAge_CulturalBuilding10d": {
+    "name": "Minaret - Lv. 4",
+    "width": 2,
+    "height": 2,
+    "type": "residential",
+    "id": 1381
+  },
+  "R_MultiAge_CulturalBuilding9a": {
+    "name": "Mughal's Temple - Lv. 1",
+    "width": 4,
+    "height": 4,
+    "type": "residential",
+    "id": 1382
+  },
+  "R_MultiAge_CulturalBuilding9b": {
+    "name": "Mughal's Temple - Lv. 2",
+    "width": 4,
+    "height": 4,
+    "type": "residential",
+    "id": 1383
+  },
+  "R_MultiAge_CulturalBuilding9c": {
+    "name": "Mughal's Temple - Lv. 3",
+    "width": 4,
+    "height": 4,
+    "type": "residential",
+    "id": 1384
+  },
+  "R_MultiAge_CulturalBuilding9d": {
+    "name": "Mughal's Temple - Lv. 4",
+    "width": 4,
+    "height": 4,
+    "type": "residential",
+    "id": 1385
+  },
+  "R_MultiAge_CulturalBuilding9e": {
+    "name": "Mughal's Temple - Lv. 5",
+    "width": 4,
+    "height": 4,
+    "type": "residential",
+    "id": 1386
+  },
+  "R_MultiAge_CulturalBuilding9f": {
+    "name": "Mughal's Temple - Lv. 6",
+    "width": 4,
+    "height": 4,
+    "type": "residential",
+    "id": 1387
+  },
+  "R_MultiAge_SummerBonus21a": {
+    "name": "Pirate's Hideout - Lv. 1",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1388
+  },
+  "R_MultiAge_SummerBonus21b": {
+    "name": "Pirate's Hideout - Lv. 2",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1389
+  },
+  "R_MultiAge_SummerBonus21c": {
+    "name": "Pirate's Hideout - Lv. 3",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1390
+  },
+  "R_MultiAge_SummerBonus21d": {
+    "name": "Pirate's Hideout - Lv. 4",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1391
+  },
+  "R_MultiAge_SummerBonus21e": {
+    "name": "Pirate's Hideout - Lv. 5",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1392
+  },
+  "R_MultiAge_SummerBonus21f": {
+    "name": "Pirate's Hideout - Lv. 6",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1393
+  },
+  "R_MultiAge_SummerBonus21g": {
+    "name": "Pirate's Hideout - Lv. 7",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1394
+  },
+  "R_MultiAge_SummerBonus21h": {
+    "name": "Pirate's Hideout - Lv. 8",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1395
+  },
+  "R_MultiAge_SummerBonus21i": {
+    "name": "Pirate's Hideout - Lv. 9",
+    "width": 6,
+    "height": 5,
+    "type": "residential",
+    "id": 1396
+  },
+  "S_Mughals_Street1": {
+    "name": "Groomed Path",
+    "width": 1,
+    "height": 1,
+    "type": "street",
+    "id": 1397
+  },
+  "Y_Mughals_Ship1": {
+    "name": "Dhow",
+    "width": 2,
+    "height": 4,
+    "type": "outpost_ship",
+    "id": 1398
   }
 };
