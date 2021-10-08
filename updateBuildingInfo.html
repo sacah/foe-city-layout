@@ -9,15 +9,15 @@
   <script>
     // Generate from Full a = {}; Object.keys(buildingData).forEach((building) => { let b = buildingData[building]; a[building] = { name: b.name, width: b.width, height: b.height, type: b.type } })
     const newBuildings = {};
-    let buildingId = 1360; // First id to assign new building, last id from buildingInfo.js + 1
+    let buildingId = 1399; // First id to assign new building, last id from buildingInfo.js + 1
     Object.keys(buildingDataFull).forEach((building) => {
       if (!buildingData[building]) {
         const b = buildingDataFull[building];
         newBuildings[building] = { 
           name: b.name, 
-          width: b.width, 
-          height: b.length, 
-          type: b.type,
+          width: b.components.AllAge.placement.size.x, 
+          height: b.components.AllAge.placement.size.y, 
+          type: b.components.AllAge.tags.tags[0].buildingType,
           id: buildingId
         };
         buildingId++;

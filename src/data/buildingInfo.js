@@ -9791,5 +9791,69 @@ var buildingData = {
     "height": 4,
     "type": "outpost_ship",
     "id": 1398
+  },
+  "W_MultiAge_FallBonus21a": {
+    "name": "Golden Crops - Lv. 1",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1399
+  },
+  "W_MultiAge_FallBonus21b": {
+    "name": "Golden Crops - Lv. 2",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1400
+  },
+  "W_MultiAge_FallBonus21c": {
+    "name": "Golden Crops - Lv. 3",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1401
+  },
+  "W_MultiAge_FallBonus21d": {
+    "name": "Golden Crops - Lv. 4",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1402
+  },
+  "W_MultiAge_FallBonus21e": {
+    "name": "Golden Crops - Lv. 5",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1403
+  },
+  "W_MultiAge_FallBonus21f": {
+    "name": "Golden Crops - Lv. 6",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1404
+  },
+  "W_MultiAge_FallBonus21g": {
+    "name": "Golden Crops - Lv. 7",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1405
+  },
+  "W_MultiAge_FallBonus21h": {
+    "name": "Golden Crops - Lv. 8",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1406
+  },
+  "W_MultiAge_FallBonus21i": {
+    "name": "Golden Crops - Lv. 9",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1407
   }
+
 };
