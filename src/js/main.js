@@ -72,6 +72,15 @@ document.querySelector('#save').addEventListener('click', (e) => {
   localStorage.setItem('saved-map-data', JSON.stringify(mapData));
 });
 
+document.addEventListener('click', (e) => {
+  if (!e.target.classList.contains('buildingNode')) {
+    multiSelectEls.forEach((value, key) => {
+      key.classList.remove('selected');
+    });
+    multiSelectEls.clear();
+  }
+});
+
 const compress = {
   map: {
     '1v': {
@@ -224,6 +233,7 @@ let maxWidth = 0;
 let maxHeight = 0;
 const xMove = 100; // Really big cities push right up against the side, this number is just a quick push away from edges
 const yMove = 100;
+const multiSelectEls = new Map(); 
 
 function abbrBuildingName(name, minSize) {
   const abbr = name.replace(/[^A-Z]/g, '').split('-')[0];
@@ -232,6 +242,16 @@ function abbrBuildingName(name, minSize) {
 
 function findParent(el, tag) {
   return el.nodeName.toLowerCase() === tag ? el : findParent(el.parentNode, tag);
+}
+
+function toggleBuilding(el) {
+  if (multiSelectEls.has(el)) {
+    multiSelectEls.delete(el);
+    el.classList.remove('selected');
+  } else {
+    multiSelectEls.set(el, 1);
+    el.classList.add('selected');
+  }
 }
 
 function createMapTile(data) {
@@ -258,6 +278,7 @@ function createBuilding(data) {
 
   el.addEventListener('click', (e) => {
     if (e.ctrlKey) findParent(e.target, 'div').remove();
+    if (e.altKey) toggleBuilding(findParent(e.target, 'div'));
   });
 
   data.x = data.x || 0; // Either FoE or FoE Helper put NULL if x or y is 0
@@ -321,6 +342,11 @@ function addInteract(gridEl) {
 
       event.target.style.top = y + 'px';
       event.target.style.left = x + 'px';
+
+      multiSelectEls.forEach((value, key) => {
+        key.style.top = parseInt(key.style.top) + event.dy + 'px';
+        key.style.left = parseInt(key.style.left) + event.dx + 'px';
+      });
     });
 }
 
