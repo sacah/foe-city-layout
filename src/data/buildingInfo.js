@@ -9854,6 +9854,118 @@ var buildingData = {
     "height": 6,
     "type": "residential",
     "id": 1407
+  },
+  "A_MultiAge_HalloweenBonusSet21a": {
+    "name": "Terror Teacup - Lv. 1",
+    "width": 3,
+    "height": 2,
+    "type": "culture",
+    "id": 1408
+  },
+  "A_MultiAge_HalloweenBonusSet21b": {
+    "name": "Terror Teacup - Lv. 2",
+    "width": 3,
+    "height": 2,
+    "type": "culture",
+    "id": 1409
+  },
+  "D_MultiAge_HalloweenBonusSet21a": {
+    "name": "Mystical Organ - Lv. 1",
+    "width": 1,
+    "height": 3,
+    "type": "decoration",
+    "id": 1410
+  },
+  "D_MultiAge_HalloweenBonusSet21b": {
+    "name": "Mystical Organ - Lv. 2",
+    "width": 1,
+    "height": 3,
+    "type": "decoration",
+    "id": 1411
+  },
+  "L_AllAge_HalloweenBonusSet21a": {
+    "name": "Wheel of Death - Lv. 1",
+    "width": 1,
+    "height": 2,
+    "type": "random_production",
+    "id": 1412
+  },
+  "L_AllAge_HalloweenBonusSet21b": {
+    "name": "Wheel of Death - Lv. 2",
+    "width": 1,
+    "height": 2,
+    "type": "random_production",
+    "id": 1413
+  },
+  "R_MultiAge_HalloweenBonusSet21a": {
+    "name": "Helter Skelter - Lv. 1",
+    "width": 3,
+    "height": 3,
+    "type": "residential",
+    "id": 1414
+  },
+  "R_MultiAge_HalloweenBonusSet21b": {
+    "name": "Helter Skelter - Lv. 2",
+    "width": 3,
+    "height": 3,
+    "type": "residential",
+    "id": 1415
+  },
+  "R_MultiAge_HalloweenBonusSet21c": {
+    "name": "Clown Town - Lv. 1",
+    "width": 2,
+    "height": 5,
+    "type": "residential",
+    "id": 1416
+  },
+  "R_MultiAge_HalloweenBonusSet21d": {
+    "name": "Clown Town - Lv. 2",
+    "width": 2,
+    "height": 5,
+    "type": "residential",
+    "id": 1417
+  },
+  "V_AllAge_CastleSystem0": {
+    "name": "Castle System",
+    "width": 10,
+    "height": 10,
+    "type": "off_grid",
+    "id": 1418
+  },
+  "V_AllAge_CastleSystem1": {
+    "name": "Castle System",
+    "width": 10,
+    "height": 10,
+    "type": "off_grid",
+    "id": 1419
+  },
+  "V_AllAge_CastleSystem2": {
+    "name": "Castle System",
+    "width": 10,
+    "height": 10,
+    "type": "off_grid",
+    "id": 1420
+  },
+  "V_AllAge_CastleSystem3": {
+    "name": "Castle System",
+    "width": 10,
+    "height": 10,
+    "type": "off_grid",
+    "id": 1421
+  },
+  "V_AllAge_CastleSystem4": {
+    "name": "Castle System",
+    "width": 10,
+    "height": 10,
+    "type": "off_grid",
+    "id": 1422
+  },
+  "V_AllAge_CastleSystem5": {
+    "name": "Castle System",
+    "width": 10,
+    "height": 10,
+    "type": "off_grid",
+    "id": 1423
   }
 
 };
