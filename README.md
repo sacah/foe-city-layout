@@ -9,11 +9,14 @@ View the site [City layout tool](https://sacah.github.io/foe-city-layout/)
 4. Copy output into src/data/buildingInfoFull.js, paste inside the JSON.parse
 5. Open updateBuildingInfo.html in a browser
 6. Open DevTools -> Console, JSON.stringify(newBuildings)
-7. Copy output, paste this into a text editor, delete the first and last ", replace all \" with "
+7. Copy output, paste this into a text editor, delete the first and last ' & { }
 8. Copy from editor, paste at the end of buildingInfo.js
 9. Format the file
 
 ## Change log
+### 5/12/2021
+* Importing latest building data
+
 ### 31/10/2021
 * Importing latest building data
 * Adjusting updateBuildingInfo to handle new FoE Data format

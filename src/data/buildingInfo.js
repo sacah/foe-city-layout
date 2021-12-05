@@ -9966,6 +9966,90 @@ var buildingData = {
     "height": 10,
     "type": "off_grid",
     "id": 1423
+  },
+  "D_MultiAge_WinterBonus21Parlor": {
+    "name": "Parlor Car",
+    "width": 3,
+    "height": 2,
+    "type": "decoration",
+    "id": 1424
+  },
+  "R_MultiAge_WinterBonus21a": {
+    "name": "Winter Canal - Lv. 1",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1425
+  },
+  "R_MultiAge_WinterBonus21b": {
+    "name": "Winter Canal - Lv. 2",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1426
+  },
+  "R_MultiAge_WinterBonus21c": {
+    "name": "Winter Canal - Lv. 3",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1427
+  },
+  "R_MultiAge_WinterBonus21d": {
+    "name": "Winter Canal - Lv. 4",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1428
+  },
+  "R_MultiAge_WinterBonus21e": {
+    "name": "Winter Canal - Lv. 5",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1429
+  },
+  "R_MultiAge_WinterBonus21f": {
+    "name": "Winter Canal - Lv. 6",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1430
+  },
+  "R_MultiAge_WinterBonus21g": {
+    "name": "Winter Canal - Lv. 7",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1431
+  },
+  "R_MultiAge_WinterBonus21h": {
+    "name": "Winter Canal - Lv. 8",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1432
+  },
+  "R_MultiAge_WinterBonus21i": {
+    "name": "Winter Canal - Lv. 9",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1433
+  },
+  "R_MultiAge_WinterBonus21jFestive": {
+    "name": "Festive Canal",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1434
+  },
+  "R_MultiAge_WinterBonus21jJolie": {
+    "name": "Jolie Canal",
+    "width": 4,
+    "height": 6,
+    "type": "residential",
+    "id": 1435
   }
 
 };
