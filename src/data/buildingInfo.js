@@ -10050,6 +10050,167 @@ var buildingData = {
     "height": 6,
     "type": "residential",
     "id": 1435
+  },
+  "D_MultiAge_Battlegrounds4": {
+    "name": "Iridescent Garden",
+    "width": 3,
+    "height": 2,
+    "type": "decoration",
+    "id": 1436
+  },
+  "R_MultiAge_Battlegrounds3a": {
+    "name": "The Great Elephant - Lv. 1",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1437
+  },
+  "R_MultiAge_Battlegrounds3b": {
+    "name": "The Great Elephant - Lv. 2",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1438
+  },
+  "R_MultiAge_Battlegrounds3c": {
+    "name": "The Great Elephant - Lv. 3",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1439
+  },
+  "R_MultiAge_Battlegrounds3d": {
+    "name": "The Great Elephant - Lv. 4",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1440
+  },
+  "R_MultiAge_Battlegrounds3e": {
+    "name": "The Great Elephant - Lv. 5",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1441
+  },
+  "R_MultiAge_Battlegrounds3f": {
+    "name": "The Great Elephant - Lv. 6",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1442
+  },
+  "R_MultiAge_Battlegrounds3g": {
+    "name": "The Great Elephant - Lv. 7",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1443
+  },
+  "R_MultiAge_Battlegrounds3hBazaar": {
+    "name": "The Elephant's Bazaar",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1444
+  },
+  "R_MultiAge_Battlegrounds3hCitadel": {
+    "name": "The Elephant's Citadel",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1445
+  },
+  "R_MultiAge_Battlegrounds3hRoyalty": {
+    "name": "The Elephant's Royalty",
+    "width": 3,
+    "height": 4,
+    "type": "residential",
+    "id": 1446
+  },
+  "R_MultiAge_ForgeBonus22a": {
+    "name": "Fiore Village - Lv. 1",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1447
+  },
+  "R_MultiAge_ForgeBonus22b": {
+    "name": "Fiore Village - Lv. 2",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1448
+  },
+  "R_MultiAge_ForgeBonus22c": {
+    "name": "Fiore Village - Lv. 3",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1449
+  },
+  "R_MultiAge_ForgeBonus22d": {
+    "name": "Fiore Village - Lv. 4",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1450
+  },
+  "R_MultiAge_ForgeBonus22e": {
+    "name": "Fiore Village - Lv. 5",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1451
+  },
+  "R_MultiAge_ForgeBonus22f": {
+    "name": "Fiore Village - Lv. 6",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1452
+  },
+  "R_MultiAge_ForgeBonus22g": {
+    "name": "Fiore Village - Lv. 7",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1453
+  },
+  "R_MultiAge_ForgeBonus22h": {
+    "name": "Fiore Village - Lv. 8",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1454
+  },
+  "R_MultiAge_ForgeBonus22i": {
+    "name": "Fiore Village - Lv. 9",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1455
+  },
+  "R_MultiAge_ForgeBonus22j": {
+    "name": "Fiore Village - Lv. 10",
+    "width": 6,
+    "height": 4,
+    "type": "residential",
+    "id": 1456
+  },
+  "V_AllAge_CastleSystem6": {
+    "name": "Castle System",
+    "width": 10,
+    "height": 10,
+    "type": "off_grid",
+    "id": 1457
+  },
+  "V_AllAge_CastleSystem7": {
+    "name": "Castle System",
+    "width": 10,
+    "height": 10,
+    "type": "off_grid",
+    "id": 1458
   }
 
 };
