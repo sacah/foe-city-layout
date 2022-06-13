@@ -10692,6 +10692,90 @@ var buildingData = {
     "height": 5,
     "type": "greatbuilding",
     "id": 1531
+  },
+  "D_MultiAge_SoccerBonus22flowerpath": {
+    "name": "Flower Path",
+    "width": 1,
+    "height": 4,
+    "type": "decoration",
+    "id": 1532
+  },
+  "D_MultiAge_SoccerBonus22olivepath": {
+    "name": "Olive Tree Path",
+    "width": 1,
+    "height": 4,
+    "type": "decoration",
+    "id": 1533
+  },
+  "D_MultiAge_SoccerBonus22rockypath": {
+    "name": "Rocky Path",
+    "width": 1,
+    "height": 4,
+    "type": "decoration",
+    "id": 1534
+  },
+  "D_MultiAge_SoccerBonus22wheatpath": {
+    "name": "Wheat Path",
+    "width": 1,
+    "height": 4,
+    "type": "decoration",
+    "id": 1535
+  },
+  "R_MultiAge_SoccerBonus22a": {
+    "name": "Gentiana Windmill - Level 1",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1536
+  },
+  "R_MultiAge_SoccerBonus22b": {
+    "name": "Gentiana Windmill - Level 2",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1537
+  },
+  "R_MultiAge_SoccerBonus22c": {
+    "name": "Gentiana Windmill - Level 3",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1538
+  },
+  "R_MultiAge_SoccerBonus22d": {
+    "name": "Gentiana Windmill - Level 4",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1539
+  },
+  "R_MultiAge_SoccerBonus22e": {
+    "name": "Gentiana Windmill - Level 5",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1540
+  },
+  "R_MultiAge_SoccerBonus22f": {
+    "name": "Gentiana Windmill - Level 6",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1541
+  },
+  "R_MultiAge_SoccerBonus22g": {
+    "name": "Gentiana Windmill - Level 7",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1542
+  },
+  "R_MultiAge_SoccerBonus22h": {
+    "name": "Gentiana Windmill - Level 8",
+    "width": 5,
+    "height": 4,
+    "type": "residential",
+    "id": 1543
   }
 
 };
