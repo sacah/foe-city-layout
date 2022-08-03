@@ -93,3 +93,10 @@ BUTTON:hover {
 #helpDialog P {
   margin-bottom: 16px;
 }
+
+#changeLog IMG {
+  display: none;
+  position: absolute;
+  top: 18px;
+  right: 0px;
+}

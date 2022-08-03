@@ -1,3 +1,5 @@
+const VERSION = 1; // Just a number to increase each release to display 'NEW' image on Change Log button.
+
 // JSON.stringify(MainParser.CityMapData)
 var cityData = JSON.parse(localStorage.getItem('saved-city-data')) || [];
 
@@ -29,6 +31,7 @@ document.querySelectorAll('[data-action="close"]').forEach((el) => {
 dialogPolyfill.registerDialog(document.querySelector('#importDialog'));
 dialogPolyfill.registerDialog(document.querySelector('#helpDialog'));
 dialogPolyfill.registerDialog(document.querySelector('#shareDialog'));
+dialogPolyfill.registerDialog(document.querySelector('#changeLogDialog'));
 
 document.querySelector('#importModal').addEventListener('click', (e) => {
   gtag('event', 'menu', {
@@ -42,6 +45,14 @@ document.querySelector('#helpModal').addEventListener('click', (e) => {
     'event_label': 'Help Modal'
   });
   document.querySelector('#helpDialog').showModal();
+});
+
+document.querySelector('#changeLog').addEventListener('click', (e) => {
+  gtag('event', 'menu', {
+    'event_label': 'Change Log Modal'
+  });
+  document.querySelector('#changeLogDialog').showModal();
+  localStorage.setItem('visited-version', VERSION);
 });
 
 document.querySelector('#import').addEventListener('click', (e) => {
@@ -382,3 +393,11 @@ function renderCity() {
   addInteract();
   
 }
+
+function displayNew() {
+  if (localStorage.getItem('visited-version') < VERSION) {
+    document.querySelector('#changeLog IMG').style.display = 'inline';
+  }
+}
+
+setTimeout(displayNew, 1000);

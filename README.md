@@ -2,18 +2,11 @@
 
 View the site [City layout tool](https://sacah.github.io/foe-city-layout/)
 
-## Updating building data
-1. Find last ID from src/data/buildingInfo.js
-2. Edit updateBuildingInfo.html, update buildingId to the ID from step 1 + 1. This is the first ID assigned to the new buildings being imported
-3. In FoE open DevTools -> Console and paste 'JSON.stringify(MainParser.CityEntities)'
-4. Copy output into src/data/buildingInfoFull.js, paste inside the JSON.parse
-5. Open updateBuildingInfo.html in a browser
-6. Open DevTools -> Console, JSON.stringify(newBuildings)
-7. Copy output, paste this into a text editor, delete the first and last ' & { }
-8. Copy from editor, paste at the end of buildingInfo.js
-9. Format the file
-
 ## Change log
+### 3/08/2022
+* Added script (update-buildings.js) to automatically update buildingInfo.js directly from FoE servers. All buildings should retain their ID, so saves and shares still work, if you find an issue, please raise a GitHub issue ticket for me with details.
+* Added a Change Log button to display this list, and a NEW image to appear when things change.
+
 ### 2/08/2022
 * Importing latest building data
 
