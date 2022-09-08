@@ -3,6 +3,10 @@
 View the site [City layout tool](https://sacah.github.io/foe-city-layout/)
 
 ## Change log
+### 8/09/2022
+* Adjusted update script
+* Imported latest buildings
+
 ### 3/08/2022
 * Added script (update-buildings.js) to automatically update buildingInfo.js directly from FoE servers. All buildings should retain their ID, so saves and shares still work, if you find an issue, please raise a GitHub issue ticket for me with details.
 * Added a Change Log button to display this list, and a NEW image to appear when things change.

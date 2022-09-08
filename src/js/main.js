@@ -1,4 +1,4 @@
-const VERSION = 1; // Just a number to increase each release to display 'NEW' image on Change Log button.
+const VERSION = 2; // Just a number to increase each release to display 'NEW' image on Change Log button.
 
 // JSON.stringify(MainParser.CityMapData)
 var cityData = JSON.parse(localStorage.getItem('saved-city-data')) || [];
